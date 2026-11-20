@@ -2239,3 +2239,295 @@ body {
     justify-content: center;
   }
 }
+
+/* ==========================================================================
+   CREDENTIAL LIGHTBOX / PDF VIEWER MODAL (Exact Reference Style)
+   ========================================================================== */
+.cred-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+  background: rgba(8, 10, 16, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.28s ease, visibility 0.28s ease;
+}
+
+.cred-modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cred-modal-container {
+  width: 100%;
+  max-width: 1120px;
+  height: 90vh;
+  max-height: 840px;
+  background: #18171f;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.65), 0 0 40px rgba(56, 189, 248, 0.1);
+  transform: scale(0.96) translateY(10px);
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cred-modal-overlay.active .cred-modal-container {
+  transform: scale(1) translateY(0);
+}
+
+/* Topbar */
+.cred-modal-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 22px;
+  background: #201d27;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.cred-modal-brand {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.cred-modal-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cred-action-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #cbd5e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.cred-action-icon:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+
+.cred-action-icon.close:hover {
+  background: #e11d48;
+  border-color: #e11d48;
+  color: #ffffff;
+}
+
+/* Toolbar */
+.cred-modal-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 22px;
+  background: #1a1722;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 0.88rem;
+  gap: 12px;
+}
+
+.cred-tool-left, .cred-tool-center, .cred-tool-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cred-tool-btn {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  font-size: 0.92rem;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.cred-tool-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+}
+
+.cred-tool-btn.active {
+  color: #fb7185;
+  background: rgba(251, 113, 133, 0.12);
+}
+
+.cred-page-nav {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #cbd5e1;
+  font-weight: 600;
+  font-size: 0.84rem;
+}
+
+.cred-page-text {
+  min-width: 44px;
+  text-align: center;
+}
+
+.cred-zoom-text {
+  color: #cbd5e1;
+  font-weight: 700;
+  font-size: 0.84rem;
+  min-width: 45px;
+  text-align: center;
+}
+
+.cred-doc-name {
+  color: #94a3b8;
+  font-weight: 600;
+  font-size: 0.84rem;
+  max-width: 260px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Modal Body */
+.cred-modal-body {
+  flex-grow: 1;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Sidebar Thumbs */
+.cred-modal-sidebar {
+  width: 150px;
+  background: #14121a;
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 16px 12px;
+  overflow-y: auto;
+  transition: width 0.25s ease, padding 0.25s ease, opacity 0.25s ease;
+  flex-shrink: 0;
+}
+
+.cred-modal-sidebar.hidden {
+  width: 0;
+  padding: 0;
+  opacity: 0;
+  border-right: none;
+  overflow: hidden;
+}
+
+.cred-sidebar-thumbs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cred-thumb-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.cred-thumb-wrap {
+  width: 100%;
+  aspect-ratio: 16 / 11;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #ffffff;
+  border: 2px solid transparent;
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+}
+
+.cred-thumb-item:hover .cred-thumb-wrap {
+  border-color: rgba(251, 113, 133, 0.6);
+  transform: scale(1.02);
+}
+
+.cred-thumb-item.active .cred-thumb-wrap {
+  border-color: #fb7185;
+  box-shadow: 0 0 16px rgba(251, 113, 133, 0.45);
+}
+
+.cred-thumb-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cred-thumb-num {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #94a3b8;
+}
+
+.cred-thumb-item.active .cred-thumb-num {
+  color: #fb7185;
+}
+
+/* Stage Canvas */
+.cred-modal-stage {
+  flex-grow: 1;
+  background: #0d0b11;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.cred-stage-wrapper {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease-out;
+  transform-origin: center center;
+}
+
+.cred-stage-image {
+  max-width: 100%;
+  max-height: 68vh;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.65);
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .cred-modal-container {
+    height: 96vh;
+    padding: 0;
+  }
+  .cred-modal-sidebar {
+    width: 90px;
+    padding: 10px 8px;
+  }
+  .cred-doc-name {
+    display: none;
+  }
+}

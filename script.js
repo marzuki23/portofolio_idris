@@ -487,4 +487,254 @@ document.addEventListener("DOMContentLoaded", function () {
     // First initial render
     displayPage(1);
   }
+
+  // ---------------------------------------------------------
+  // 10. CREDENTIAL LIGHTBOX & VIEWER MODAL
+  // ---------------------------------------------------------
+  const CERTIFICATES_DATA = {
+    "dicoding-ai": {
+      title: "Belajar Dasar AI",
+      issuer: "Dicoding Indonesia",
+      badge: "PDF",
+      date: "08 Jan 2026 – Jan 2029",
+      driveUrl: "https://drive.google.com/file/d/1dbkYit87aQaEXl32l2oFUbfVseqO2M2w/view?usp=sharing",
+      downloadUrl: "https://drive.google.com/uc?export=download&id=1dbkYit87aQaEXl32l2oFUbfVseqO2M2w",
+      pages: [
+        "images/certificates/cert-dicoding-ai.jpg",
+        "images/certificates/cert-dicoding-ai-p2.jpg"
+      ]
+    },
+    "revou-data": {
+      title: "Intro to Data Analytics",
+      issuer: "RevoU",
+      badge: "JPG",
+      date: "15 Mar 2024",
+      driveUrl: "https://drive.google.com/file/d/1t3JJhk__GRZuDCGBuQEFM2h0elcXzbKP/view?usp=sharing",
+      downloadUrl: "https://drive.google.com/uc?export=download&id=1t3JJhk__GRZuDCGBuQEFM2h0elcXzbKP",
+      pages: [
+        "images/certificates/cert-revou-data.jpg"
+      ]
+    },
+    "huawei-storage": {
+      title: "HCIA-Storage V5.0 Course",
+      issuer: "Huawei ICT Academy",
+      badge: "PNG",
+      date: "Enterprise Storage Architecture",
+      driveUrl: "https://drive.google.com/file/d/1A7Mbq7s2SdxEUItsF9dJjYtbJYONe6Pe/view?usp=sharing",
+      downloadUrl: "https://drive.google.com/uc?export=download&id=1A7Mbq7s2SdxEUItsF9dJjYtbJYONe6Pe",
+      pages: [
+        "images/certificates/cert-huawei-storage.png"
+      ]
+    },
+    "huawei-bigdata": {
+      title: "Big Data Mining",
+      issuer: "Huawei ICT Academy",
+      badge: "PNG",
+      date: "Distributed Data Processing",
+      driveUrl: "https://drive.google.com/file/d/1KG6aIV8CSoQhEeub7T5Pq1Y501yyK3GV/view?usp=sharing",
+      downloadUrl: "https://drive.google.com/uc?export=download&id=1KG6aIV8CSoQhEeub7T5Pq1Y501yyK3GV",
+      pages: [
+        "images/certificates/cert-huawei-bigdata.png"
+      ]
+    },
+    "huawei-python": {
+      title: "Python Programming Basic",
+      issuer: "Huawei ICT Academy",
+      badge: "PNG",
+      date: "Python Core & OOP",
+      driveUrl: "https://drive.google.com/file/d/1SF_iyrlhll-l-JOnU77XbmvzCemMqZo5/view?usp=sharing",
+      downloadUrl: "https://drive.google.com/uc?export=download&id=1SF_iyrlhll-l-JOnU77XbmvzCemMqZo5",
+      pages: [
+        "images/certificates/cert-huawei-python.png"
+      ]
+    },
+    "huawei-network": {
+      title: "Computer Network",
+      issuer: "Huawei ICT Academy",
+      badge: "PNG",
+      date: "TCP/IP & Network Design",
+      driveUrl: "https://drive.google.com/file/d/11dUFNuqJXtS8wovlF5ewr_D7yy_pwT70/view?usp=sharing",
+      downloadUrl: "https://drive.google.com/uc?export=download&id=11dUFNuqJXtS8wovlF5ewr_D7yy_pwT70",
+      pages: [
+        "images/certificates/cert-huawei-network.png"
+      ]
+    },
+    "huawei-ai": {
+      title: "AI Basic & Overview of AI",
+      issuer: "Huawei ICT Academy",
+      badge: "PNG",
+      date: "Artificial Intelligence Foundation",
+      driveUrl: "https://drive.google.com/file/d/1CA8kVgsvxPgar1fIlsiXi9uZ6xkLkRBz/view?usp=sharing",
+      downloadUrl: "https://drive.google.com/uc?export=download&id=1CA8kVgsvxPgar1fIlsiXi9uZ6xkLkRBz",
+      pages: [
+        "images/certificates/cert-huawei-ai.png"
+      ]
+    }
+  };
+
+  const modal = document.getElementById("credViewerModal");
+  if (modal) {
+    const stageImg = document.getElementById("credStageImg");
+    const stageWrap = document.getElementById("credStageWrap");
+    const docName = document.getElementById("credDocName");
+    const thumbList = document.getElementById("credThumbList");
+    const pageText = document.getElementById("credPageText");
+    const zoomVal = document.getElementById("credZoomVal");
+    const btnClose = document.getElementById("credModalClose");
+    const btnDownload = document.getElementById("credModalDownload");
+    const btnDrive = document.getElementById("credModalDrive");
+    const btnPrev = document.getElementById("credPagePrev");
+    const btnNext = document.getElementById("credPageNext");
+    const btnZoomIn = document.getElementById("credZoomIn");
+    const btnZoomOut = document.getElementById("credZoomOut");
+    const btnZoomReset = document.getElementById("credZoomReset");
+    const btnToggleSidebar = document.getElementById("credToggleSidebar");
+    const sidebar = document.getElementById("credSidebar");
+
+    let currentCert = null;
+    let currentPageIdx = 0;
+    let currentZoom = 100;
+
+    function renderStage() {
+      if (!currentCert) return;
+      const pages = currentCert.pages;
+      stageImg.src = pages[currentPageIdx];
+      pageText.textContent = `${currentPageIdx + 1} / ${pages.length}`;
+      zoomVal.textContent = `${currentZoom}%`;
+      stageWrap.style.transform = `scale(${currentZoom / 100})`;
+
+      // Update sidebar active thumb
+      const thumbs = thumbList.querySelectorAll(".cred-thumb-item");
+      thumbs.forEach((th, idx) => {
+        if (idx === currentPageIdx) {
+          th.classList.add("active");
+        } else {
+          th.classList.remove("active");
+        }
+      });
+    }
+
+    function openCertViewer(certId) {
+      const data = CERTIFICATES_DATA[certId];
+      if (!data) return;
+      currentCert = data;
+      currentPageIdx = 0;
+      currentZoom = 100;
+
+      docName.textContent = data.title;
+      btnDownload.href = data.downloadUrl || data.pages[0];
+      btnDrive.href = data.driveUrl || "#";
+
+      // Build thumbnail strip
+      thumbList.innerHTML = "";
+      data.pages.forEach((pageImg, idx) => {
+        const item = document.createElement("div");
+        item.className = `cred-thumb-item ${idx === 0 ? "active" : ""}`;
+        item.innerHTML = `
+          <div class="cred-thumb-wrap">
+            <img src="${pageImg}" alt="Halaman ${idx + 1}">
+          </div>
+          <span class="cred-thumb-num">${idx + 1}</span>
+        `;
+        item.addEventListener("click", function () {
+          currentPageIdx = idx;
+          renderStage();
+        });
+        thumbList.appendChild(item);
+      });
+
+      renderStage();
+      modal.classList.add("active");
+      modal.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeCertViewer() {
+      modal.classList.remove("active");
+      modal.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+    }
+
+    // Attach click listeners to all open-cert buttons/links
+    document.querySelectorAll("[data-open-cert]").forEach((el) => {
+      el.addEventListener("click", function (e) {
+        e.preventDefault();
+        const certId = this.getAttribute("data-open-cert");
+        openCertViewer(certId);
+      });
+    });
+
+    if (btnClose) btnClose.addEventListener("click", closeCertViewer);
+
+    modal.addEventListener("click", function (e) {
+      if (e.target === modal) closeCertViewer();
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (!modal.classList.contains("active")) return;
+      if (e.key === "Escape") closeCertViewer();
+      if (e.key === "ArrowRight") {
+        if (currentCert && currentPageIdx < currentCert.pages.length - 1) {
+          currentPageIdx++;
+          renderStage();
+        }
+      }
+      if (e.key === "ArrowLeft") {
+        if (currentCert && currentPageIdx > 0) {
+          currentPageIdx--;
+          renderStage();
+        }
+      }
+    });
+
+    if (btnPrev) {
+      btnPrev.addEventListener("click", function () {
+        if (currentCert && currentPageIdx > 0) {
+          currentPageIdx--;
+          renderStage();
+        }
+      });
+    }
+
+    if (btnNext) {
+      btnNext.addEventListener("click", function () {
+        if (currentCert && currentPageIdx < currentCert.pages.length - 1) {
+          currentPageIdx++;
+          renderStage();
+        }
+      });
+    }
+
+    if (btnZoomIn) {
+      btnZoomIn.addEventListener("click", function () {
+        if (currentZoom < 250) {
+          currentZoom += 25;
+          renderStage();
+        }
+      });
+    }
+
+    if (btnZoomOut) {
+      btnZoomOut.addEventListener("click", function () {
+        if (currentZoom > 50) {
+          currentZoom -= 25;
+          renderStage();
+        }
+      });
+    }
+
+    if (btnZoomReset) {
+      btnZoomReset.addEventListener("click", function () {
+        currentZoom = 100;
+        renderStage();
+      });
+    }
+
+    if (btnToggleSidebar && sidebar) {
+      btnToggleSidebar.addEventListener("click", function () {
+        sidebar.classList.toggle("hidden");
+        this.classList.toggle("active");
+      });
+    }
+  }
 });
