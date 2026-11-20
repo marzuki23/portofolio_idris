@@ -507,7 +507,7 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "Intro to Data Analytics",
       issuer: "RevoU",
       badge: "JPG",
-      date: "No Expired",
+      date: "2024 · No Expired",
       downloadUrl: "images/certificates/cert-revou-data.jpg",
       pages: [
         "images/certificates/cert-revou-data.jpg"
@@ -517,7 +517,7 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "HCIA-Storage V5.0 Course",
       issuer: "Huawei ICT Academy",
       badge: "PNG",
-      date: "No Expired",
+      date: "2025 · No Expired",
       downloadUrl: "images/certificates/cert-huawei-storage.png",
       pages: [
         "images/certificates/cert-huawei-storage.png"
@@ -527,7 +527,7 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "Big Data Mining",
       issuer: "Huawei ICT Academy",
       badge: "PNG",
-      date: "No Expired",
+      date: "2024 · No Expired",
       downloadUrl: "images/certificates/cert-huawei-bigdata.png",
       pages: [
         "images/certificates/cert-huawei-bigdata.png"
@@ -537,7 +537,7 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "Python Programming Basic",
       issuer: "Huawei ICT Academy",
       badge: "PNG",
-      date: "No Expired",
+      date: "2025 · No Expired",
       downloadUrl: "images/certificates/cert-huawei-python.png",
       pages: [
         "images/certificates/cert-huawei-python.png"
@@ -547,7 +547,7 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "Algorithm & Design",
       issuer: "Huawei ICT Academy",
       badge: "PNG",
-      date: "No Expired",
+      date: "2025 · No Expired",
       downloadUrl: "images/certificates/cert-huawei-algo.png",
       pages: [
         "images/certificates/cert-huawei-algo.png"
@@ -557,7 +557,7 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "AI Basic",
       issuer: "Huawei ICT Academy",
       badge: "PNG",
-      date: "No Expired",
+      date: "2025 · No Expired",
       downloadUrl: "images/certificates/cert-huawei-ai-basic.png",
       pages: [
         "images/certificates/cert-huawei-ai-basic.png"
@@ -567,7 +567,7 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "Overview of AI",
       issuer: "Huawei ICT Academy",
       badge: "PNG",
-      date: "No Expired",
+      date: "2025 · No Expired",
       downloadUrl: "images/certificates/cert-huawei-ai-overview.png",
       pages: [
         "images/certificates/cert-huawei-ai-overview.png"
@@ -577,7 +577,7 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "Computer Network",
       issuer: "Huawei ICT Academy",
       badge: "PNG",
-      date: "No Expired",
+      date: "2025 · No Expired",
       downloadUrl: "images/certificates/cert-huawei-network.png",
       pages: [
         "images/certificates/cert-huawei-network.png"
@@ -587,7 +587,7 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "Computer Network (CRA)",
       issuer: "Huawei ICT Academy",
       badge: "PNG",
-      date: "No Expired",
+      date: "2025 · No Expired",
       downloadUrl: "images/certificates/cert-huawei-network-cra.png",
       pages: [
         "images/certificates/cert-huawei-network-cra.png"
@@ -597,7 +597,7 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "Data Management & Analytics",
       issuer: "Huawei ICT Academy",
       badge: "PNG",
-      date: "No Expired",
+      date: "2025 · No Expired",
       downloadUrl: "images/certificates/cert-huawei-datamgmt.png",
       pages: [
         "images/certificates/cert-huawei-datamgmt.png"
@@ -607,7 +607,7 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "Data Management (CRA)",
       issuer: "Huawei ICT Academy",
       badge: "PNG",
-      date: "No Expired",
+      date: "2025 · No Expired",
       downloadUrl: "images/certificates/cert-huawei-datamgmt-cra.png",
       pages: [
         "images/certificates/cert-huawei-datamgmt-cra.png"
@@ -617,7 +617,7 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "Information Representation & Data Organization",
       issuer: "Huawei ICT Academy",
       badge: "PNG",
-      date: "No Expired",
+      date: "2025 · No Expired",
       downloadUrl: "images/certificates/cert-huawei-inforep.png",
       pages: [
         "images/certificates/cert-huawei-inforep.png"
@@ -627,7 +627,7 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "Information Representation (CRA)",
       issuer: "Huawei ICT Academy",
       badge: "PNG",
-      date: "No Expired",
+      date: "2025 · No Expired",
       downloadUrl: "images/certificates/cert-huawei-inforep-cra.png",
       pages: [
         "images/certificates/cert-huawei-inforep-cra.png"
