@@ -360,19 +360,23 @@ document.addEventListener("DOMContentLoaded", function () {
       header?.classList.remove("scrolled");
     }
 
-    const scrollY = window.pageYOffset + 120;
-    sections.forEach(function (current) {
-      const sectionHeight = current.offsetHeight;
-      const sectionTop = current.offsetTop;
-      const sectionId = current.getAttribute("id");
-      const navItem = document.querySelector(`.nav-menu a[href*="${sectionId}"]`);
+    const currentPagePath = window.location.pathname;
+    const isMainHome = currentPagePath === "/" || currentPagePath.endsWith("index.html") || currentPagePath === "";
+    if (isMainHome) {
+      const scrollY = window.pageYOffset + 120;
+      sections.forEach(function (current) {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop;
+        const sectionId = current.getAttribute("id");
+        const navItem = document.querySelector(`.nav-menu a[href*="${sectionId}"]`);
 
-      if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-        navItem?.classList.add("active");
-      } else {
-        navItem?.classList.remove("active");
-      }
-    });
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+          navItem?.classList.add("active");
+        } else {
+          navItem?.classList.remove("active");
+        }
+      });
+    }
   }
 
   window.addEventListener("scroll", onScroll, { passive: true });

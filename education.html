@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education · Muhammad Idris Marzuki</title>
+  <meta name="description"
+    content="Latar belakang akademis dan studi formal Muhammad Idris Marzuki di program studi D4 Teknik Informatika, Universitas Harkat Negeri.">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23be123c'/><text x='50%' y='55%' font-size='50' font-weight='900' fill='white' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif'>M.</text></svg>">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Unified Modern Stylesheet -->
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <!-- Custom Modern Cursor Follower -->
+  <div id="cursorGlow" class="cursor-glow" aria-hidden="true"></div>
+  <div id="cursorDot" class="cursor-dot" aria-hidden="true"></div>
+  <div id="cursorRing" class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Ambient Atmospheric Glows -->
+  <div class="ambient-glow"></div>
+
+  <!-- Particles Canvas -->
+  <div id="particles-js"></div>
+
+  <!-- Unified Modern Header -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <!-- Monogram & Full Identity Brand Logo (Matching reference) -->
+      <a href="index.html" class="brand-logo" aria-label="Muhammad Idris Marzuki Home">
+        <span class="brand-badge-ref">M.</span>
+        <div class="brand-info">
+          <span class="brand-name">Muhammad Idris Marzuki</span>
+          <span class="brand-role">Full-Stack & Applied AI Engineer</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="experience.html" class="nav-link"><i class="fa-solid fa-layer-group"></i> Experience</a></li>
+          <li><a href="projects.html" class="nav-link"><i class="fa-solid fa-code-fork"></i> Projects</a></li>
+          <li><a href="education.html" class="nav-link active"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+          <li><a href="certifications.html" class="nav-link"><i class="fa-solid fa-award"></i> Certifications</a></li>
+          <li><a href="index.html#contact" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Button & Theme Toggle -->
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <!-- Theme Toggle Switcher -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Switch Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <a href="https://wa.me/628816532285?text=Halo%20Idris,%20saya%20ingin%20meminta%20CV/Resume%20Anda"
+          target="_blank" rel="noopener noreferrer" class="btn-header-files" title="Request CV via WhatsApp">
+          <i class="fa-solid fa-file-arrow-down"></i> Request CV
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Dropdown Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div
+      style="display: flex; justify-content: space-between; align-items: center; padding: 4px 6px; margin-bottom: 4px;">
+      <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-secondary);">Theme Mode</span>
+      <button class="theme-toggle" aria-label="Toggle theme" title="Switch Theme">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </div>
+    <a href="experience.html" class="nav-link mobile-link"><i class="fa-solid fa-layer-group"></i> Experience</a>
+    <a href="projects.html" class="nav-link mobile-link"><i class="fa-solid fa-code-fork"></i> Projects</a>
+    <a href="education.html" class="nav-link mobile-link active"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+    <a href="certifications.html" class="nav-link mobile-link"><i class="fa-solid fa-award"></i> Certifications</a>
+    <a href="index.html#contact" class="nav-link mobile-link"><i class="fa-solid fa-paper-plane"></i> Contact</a>
+    <a href="https://wa.me/628816532285?text=Halo%20Idris,%20saya%20ingin%20meminta%20CV/Resume%20Anda" target="_blank"
+      rel="noopener noreferrer" class="btn-header-files"
+      style="display: inline-flex; justify-content: center; margin-top: 8px;">
+      <i class="fa-solid fa-file-arrow-down"></i> Request CV (WhatsApp)
+    </a>
+  </div>
+
+  <main>
+    <!-- STANDALONE EDUCATION HERO & DETAILS SECTION -->
+    <section class="certs-hero-section">
+      <div class="container">
+        <!-- Page Header -->
+        <div class="certs-hero-header" data-aos="fade-up">
+          <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Academic Journey</span>
+          <h1 class="certs-hero-title">Education & <span class="text-gradient">Formal Studies</span></h1>
+          <p class="certs-hero-desc">
+            Pendidikan kejuruan terapan berfokus pada rekayasa perangkat lunak modern, arsitektur komputasi awan, keamanan data terenkripsi, dan penerapan kecerdasan buatan pada industri nyata.
+          </p>
+          <div class="certs-stats-row">
+            <span class="certs-stat-badge"><i class="fa-solid fa-building-columns"></i> Universitas Harkat Negeri</span>
+            <span class="certs-stat-badge"><i class="fa-solid fa-code"></i> D4 Teknik Informatika</span>
+            <span class="certs-stat-badge"><i class="fa-regular fa-calendar"></i> Angkatan 2023 – Sekarang</span>
+            <span class="certs-stat-badge"><i class="fa-solid fa-circle-check" style="color: #10b981;"></i> Status: Mahasiswa Aktif</span>
+          </div>
+        </div>
+
+        <!-- Academic Hero Card -->
+        <div class="education-showcase-wrapper" style="margin-top: 36px;" data-aos="fade-up" data-aos-delay="100">
+          <div class="education-hero-card">
+            <div class="edu-card-main">
+              <div class="edu-badge-row">
+                <span class="edu-pill university"><i class="fa-solid fa-building-columns"></i> UNIVERSITAS HARKAT NEGERI</span>
+                <span class="edu-pill degree"><i class="fa-solid fa-code"></i> D4 Teknik Informatika</span>
+                <span class="edu-pill period"><i class="fa-regular fa-calendar"></i> 2023 – Sekarang</span>
+              </div>
+              <h2 class="edu-degree-title" style="margin-top: 16px;">Applied Informatics Engineering (Sarjana Terapan Komputer)</h2>
+              <p class="edu-degree-desc">
+                Program studi sarjana terapan yang mengintegrasikan teori ilmu komputer fundamental dengan praktik rekayasa perangkat lunak tingkat industri. Kurikulum dirancang untuk mencakup seluruh siklus pengembangan software (SDLC), dari riset kebutuhan, perancangan arsitektur, implementasi clean code, hingga deployment cloud dan pemeliharaan sistem.
+              </p>
+
+              <!-- Pillars Grid -->
+              <div class="edu-pillars-grid" style="margin-top: 28px;">
+                <div class="edu-pillar-item">
+                  <div class="pillar-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                  <div class="pillar-content">
+                    <h5>Software & Mobile Engineering</h5>
+                    <p>Membangun aplikasi web performa tinggi menggunakan Laravel & Python Flask, serta aplikasi mobile modern multiplatform dengan Flutter & Dart.</p>
+                  </div>
+                </div>
+                <div class="edu-pillar-item">
+                  <div class="pillar-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                  <div class="pillar-content">
+                    <h5>API Architecture & Security</h5>
+                    <p>Perancangan RESTful API terstandarisasi, integrasi cloud database Supabase, otentikasi Google OAuth, serta sistem keamanan token kriptografi JWT.</p>
+                  </div>
+                </div>
+                <div class="edu-pillar-item">
+                  <div class="pillar-icon"><i class="fa-solid fa-database"></i></div>
+                  <div class="pillar-content">
+                    <h5>Database Management & AI</h5>
+                    <p>Pemodelan data relasional terstruktur (PostgreSQL & MySQL), optimasi kueri kompleks, serta implementasi inferensi machine learning OpenCV & YOLOv8.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- MODERN FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-copy">
+        &copy; 2026 <strong>Muhammad Idris Marzuki</strong>. Crafted with precision & clean code.
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://github.com/marzuki23" target="_blank" rel="noopener noreferrer" class="social-pill"
+          aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/muhammad-idris-marzuki-7276a1291" target="_blank" rel="noopener noreferrer"
+          class="social-pill" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.instagram.com/m.idris_23" target="_blank" rel="noopener noreferrer" class="social-pill"
+          aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/628816532285" target="_blank" rel="noopener noreferrer" class="social-pill"
+          aria-label="WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+
+      <a href="#" class="back-to-top">
+        <span>Back to top</span>
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 60,
+      easing: 'ease-out-cubic'
+    });
+    window.addEventListener('load', function () {
+      setTimeout(AOS.refresh, 100);
+    });
+  </script>
+
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: {
+          value: 75,
+          density: { enable: true, value_area: 850 }
+        },
+        color: {
+          value: ["#38bdf8", "#818cf8", "#22d3ee"]
+        },
+        shape: {
+          type: "circle"
+        },
+        opacity: {
+          value: 0.75,
+          random: true,
+          anim: {
+            enable: true,
+            speed: 1.6,
+            opacity_min: 0.25,
+            sync: false
+          }
+        },
+        size: {
+          value: 3.5,
+          random: true,
+          anim: {
+            enable: true,
+            speed: 2,
+            size_min: 1.4,
+            sync: false
+          }
+        },
+        line_linked: {
+          enable: true,
+          distance: 155,
+          color: "#38bdf8",
+          opacity: 0.45,
+          width: 1.2
+        },
+        move: {
+          enable: true,
+          speed: 2.2,
+          direction: "none",
+          random: true,
+          straight: false,
+          out_mode: "out",
+          bounce: false,
+          attract: {
+            enable: true,
+            rotateX: 600,
+            rotateY: 1200
+          }
+        }
+      },
+      interactivity: {
+        detect_on: "window",
+        events: {
+          onhover: {
+            enable: true,
+            mode: "grab"
+          },
+          onclick: {
+            enable: true,
+            mode: "push"
+          },
+          resize: true
+        },
+        modes: {
+          grab: {
+            distance: 180,
+            line_linked: {
+              opacity: 0.8
+            }
+          },
+          push: {
+            particles_nb: 4
+          }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+
+  <!-- Core Interactive Script -->
+  <script src="script.js"></script>
+
+  <!-- Visitor Tracker -->
+  <script src="js/visitor-tracker.js"></script>
+</body>
+
+</html>
