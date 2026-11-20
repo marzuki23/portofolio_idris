@@ -803,26 +803,59 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // ---------------------------------------------------------
-  // 11. CERTIFICATE CATEGORY FILTERING
+  // 11. CERTIFICATE CAROUSEL & CATEGORY FILTERING
   // ---------------------------------------------------------
+  const certTrack = document.getElementById("certTrack");
+  const btnCertPrev = document.getElementById("certSlidePrev");
+  const btnCertNext = document.getElementById("certSlideNext");
   const certFilterBtns = document.querySelectorAll("[data-cert-filter]");
-  const certCards = document.querySelectorAll(".cert-visual-card");
+  const certSlides = document.querySelectorAll(".cert-carousel-slide");
 
-  if (certFilterBtns.length && certCards.length) {
+  function updateCertNavButtons() {
+    if (!certTrack || !btnCertPrev || !btnCertNext) return;
+    const maxScroll = certTrack.scrollWidth - certTrack.clientWidth;
+    btnCertPrev.disabled = certTrack.scrollLeft <= 4;
+    btnCertNext.disabled = certTrack.scrollLeft >= maxScroll - 4;
+  }
+
+  if (certTrack && btnCertPrev && btnCertNext) {
+    btnCertPrev.addEventListener("click", function () {
+      const slide = certTrack.querySelector(".cert-carousel-slide:not(.hidden)");
+      const scrollStep = slide ? slide.offsetWidth + 24 : 320;
+      certTrack.scrollBy({ left: -scrollStep, behavior: "smooth" });
+    });
+
+    btnCertNext.addEventListener("click", function () {
+      const slide = certTrack.querySelector(".cert-carousel-slide:not(.hidden)");
+      const scrollStep = slide ? slide.offsetWidth + 24 : 320;
+      certTrack.scrollBy({ left: scrollStep, behavior: "smooth" });
+    });
+
+    certTrack.addEventListener("scroll", updateCertNavButtons, { passive: true });
+    window.addEventListener("resize", updateCertNavButtons, { passive: true });
+    setTimeout(updateCertNavButtons, 200);
+  }
+
+  if (certFilterBtns.length && certSlides.length) {
     certFilterBtns.forEach((btn) => {
       btn.addEventListener("click", function () {
         certFilterBtns.forEach((b) => b.classList.remove("active"));
         this.classList.add("active");
 
         const targetFilter = this.getAttribute("data-cert-filter");
-        certCards.forEach((card) => {
-          const category = card.getAttribute("data-category");
+        certSlides.forEach((slide) => {
+          const category = slide.getAttribute("data-category");
           if (targetFilter === "all" || category === targetFilter) {
-            card.classList.remove("hidden");
+            slide.classList.remove("hidden");
           } else {
-            card.classList.add("hidden");
+            slide.classList.add("hidden");
           }
         });
+
+        if (certTrack) {
+          certTrack.scrollTo({ left: 0, behavior: "smooth" });
+          setTimeout(updateCertNavButtons, 150);
+        }
       });
     });
   }

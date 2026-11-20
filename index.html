@@ -608,7 +608,7 @@
           </div>
         </div>
 
-        <!-- Part B: Licenses & Professional Certifications Showcase -->
+        <!-- Part B: Licenses & Professional Certifications Showcase (Carousel Slider) -->
         <div class="certifications-showcase-wrapper" data-aos="fade-up" data-aos-delay="100">
           <div class="cert-section-header">
             <div>
@@ -616,8 +616,16 @@
               <h2 class="section-title">Licenses & <span class="text-gradient">Certifications</span></h2>
               <p class="section-desc">Koleksi 14 kredensial profesional terverifikasi resmi dari Dicoding Indonesia, RevoU, dan Huawei ICT Academy.</p>
             </div>
-            <div class="cert-header-right">
-              <span class="cert-count-pill"><i class="fa-solid fa-certificate"></i> 14 Verified Credentials</span>
+            <div class="cert-carousel-actions">
+              <span class="cert-count-pill"><i class="fa-solid fa-certificate"></i> 14 Credentials</span>
+              <div class="cert-carousel-nav">
+                <button type="button" id="certSlidePrev" class="cert-nav-btn" aria-label="Sertifikat Sebelumnya" disabled title="Geser ke kiri">
+                  <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button type="button" id="certSlideNext" class="cert-nav-btn" aria-label="Sertifikat Berikutnya" title="Geser ke kanan">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
             </div>
           </div>
 
@@ -630,272 +638,304 @@
             <button type="button" class="cert-filter-btn" data-cert-filter="programming"><i class="fa-solid fa-code"></i> Programming (3)</button>
           </div>
 
-          <!-- 14 Visual Cards Grid -->
-          <div class="cert-cards-grid">
-            <!-- Cert 1: Dicoding Belajar Dasar AI -->
-            <div class="cert-visual-card" data-category="ai-data">
-              <div class="cert-thumb-box">
-                <span class="cert-file-badge">PDF</span>
-                <a href="javascript:void(0)" class="cert-thumb-link" data-open-cert="dicoding-ai" title="Buka Pratinjau Kredensial">
-                  <img src="images/certificates/cert-dicoding-ai.jpg" alt="Sertifikat Belajar Dasar AI - Dicoding" loading="lazy">
-                </a>
-                <button type="button" class="cert-cred-bar" data-open-cert="dicoding-ai" title="Buka Kredensial">
-                  <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                  <span>Credential</span>
-                </button>
+          <!-- Carousel Slider Track Container -->
+          <div class="cert-carousel-container">
+            <div id="certTrack" class="cert-carousel-track" role="region" aria-label="Daftar Sertifikat Geser" tabindex="0">
+              
+              <!-- Cert 1: Dicoding Belajar Dasar AI -->
+              <div class="cert-carousel-slide" data-category="ai-data">
+                <div class="cert-visual-card">
+                  <div class="cert-thumb-box">
+                    <span class="cert-file-badge">PDF</span>
+                    <a href="javascript:void(0)" class="cert-thumb-link" data-open-cert="dicoding-ai" title="Buka Pratinjau Kredensial">
+                      <img src="images/certificates/cert-dicoding-ai.jpg" alt="Sertifikat Belajar Dasar AI - Dicoding" loading="lazy">
+                    </a>
+                    <button type="button" class="cert-cred-bar" data-open-cert="dicoding-ai" title="Buka Kredensial">
+                      <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                      <span>Credential</span>
+                    </button>
+                  </div>
+                  <div class="cert-meta-box">
+                    <div class="cert-date-accent">Jan 2026 – Jan 2029</div>
+                    <h4 class="cert-card-heading">Belajar Dasar AI</h4>
+                    <div class="cert-card-sub"><i class="fa-regular fa-building" style="margin-right: 5px; opacity: 0.7;"></i>Dicoding</div>
+                  </div>
+                </div>
               </div>
-              <div class="cert-meta-box">
-                <div class="cert-date-accent">Jan 2026 – Jan 2029</div>
-                <h4 class="cert-card-heading">Belajar Dasar AI</h4>
-                <div class="cert-card-sub"><i class="fa-regular fa-building" style="margin-right: 5px; opacity: 0.7;"></i>Dicoding</div>
-              </div>
-            </div>
 
-            <!-- Cert 2: RevoU Intro to Data Analytics -->
-            <div class="cert-visual-card" data-category="ai-data">
-              <div class="cert-thumb-box">
-                <span class="cert-file-badge">IMAGE</span>
-                <a href="javascript:void(0)" class="cert-thumb-link" data-open-cert="revou-data" title="Buka Pratinjau Kredensial">
-                  <img src="images/certificates/cert-revou-data.jpg" alt="Sertifikat Intro to Data Analytics - RevoU" loading="lazy">
-                </a>
-                <button type="button" class="cert-cred-bar" data-open-cert="revou-data" title="Buka Kredensial">
-                  <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                  <span>Credential</span>
-                </button>
+              <!-- Cert 2: RevoU Intro to Data Analytics -->
+              <div class="cert-carousel-slide" data-category="ai-data">
+                <div class="cert-visual-card">
+                  <div class="cert-thumb-box">
+                    <span class="cert-file-badge">IMAGE</span>
+                    <a href="javascript:void(0)" class="cert-thumb-link" data-open-cert="revou-data" title="Buka Pratinjau Kredensial">
+                      <img src="images/certificates/cert-revou-data.jpg" alt="Sertifikat Intro to Data Analytics - RevoU" loading="lazy">
+                    </a>
+                    <button type="button" class="cert-cred-bar" data-open-cert="revou-data" title="Buka Kredensial">
+                      <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                      <span>Credential</span>
+                    </button>
+                  </div>
+                  <div class="cert-meta-box">
+                    <div class="cert-date-accent">2024 · No Expired</div>
+                    <h4 class="cert-card-heading">Intro to Data Analytics</h4>
+                    <div class="cert-card-sub"><i class="fa-regular fa-building" style="margin-right: 5px; opacity: 0.7;"></i>RevoU</div>
+                  </div>
+                </div>
               </div>
-              <div class="cert-meta-box">
-                <div class="cert-date-accent">2024 · No Expired</div>
-                <h4 class="cert-card-heading">Intro to Data Analytics</h4>
-                <div class="cert-card-sub"><i class="fa-regular fa-building" style="margin-right: 5px; opacity: 0.7;"></i>RevoU</div>
-              </div>
-            </div>
 
-            <!-- Cert 3: Huawei HCIA-Storage V5.0 -->
-            <div class="cert-visual-card" data-category="cloud">
-              <div class="cert-thumb-box">
-                <span class="cert-file-badge">IMAGE</span>
-                <a href="javascript:void(0)" class="cert-thumb-link" data-open-cert="huawei-storage" title="Buka Pratinjau Kredensial">
-                  <img src="images/certificates/cert-huawei-storage.png" alt="Sertifikat HCIA-Storage V5.0 - Huawei" loading="lazy">
-                </a>
-                <button type="button" class="cert-cred-bar" data-open-cert="huawei-storage" title="Buka Kredensial">
-                  <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                  <span>Credential</span>
-                </button>
+              <!-- Cert 3: Huawei HCIA-Storage V5.0 -->
+              <div class="cert-carousel-slide" data-category="cloud">
+                <div class="cert-visual-card">
+                  <div class="cert-thumb-box">
+                    <span class="cert-file-badge">IMAGE</span>
+                    <a href="javascript:void(0)" class="cert-thumb-link" data-open-cert="huawei-storage" title="Buka Pratinjau Kredensial">
+                      <img src="images/certificates/cert-huawei-storage.png" alt="Sertifikat HCIA-Storage V5.0 - Huawei" loading="lazy">
+                    </a>
+                    <button type="button" class="cert-cred-bar" data-open-cert="huawei-storage" title="Buka Kredensial">
+                      <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                      <span>Credential</span>
+                    </button>
+                  </div>
+                  <div class="cert-meta-box">
+                    <div class="cert-date-accent">2025 · No Expired</div>
+                    <h4 class="cert-card-heading">HCIA-Storage V5.0</h4>
+                    <div class="cert-card-sub"><i class="fa-regular fa-building" style="margin-right: 5px; opacity: 0.7;"></i>Huawei</div>
+                  </div>
+                </div>
               </div>
-              <div class="cert-meta-box">
-                <div class="cert-date-accent">2025 · No Expired</div>
-                <h4 class="cert-card-heading">HCIA-Storage V5.0</h4>
-                <div class="cert-card-sub"><i class="fa-regular fa-building" style="margin-right: 5px; opacity: 0.7;"></i>Huawei</div>
-              </div>
-            </div>
 
-            <!-- Cert 4: Huawei Big Data Mining -->
-            <div class="cert-visual-card" data-category="ai-data">
-              <div class="cert-thumb-box">
-                <span class="cert-file-badge">IMAGE</span>
-                <a href="javascript:void(0)" class="cert-thumb-link" data-open-cert="huawei-bigdata" title="Buka Pratinjau Kredensial">
-                  <img src="images/certificates/cert-huawei-bigdata.png" alt="Sertifikat Big Data Mining - Huawei" loading="lazy">
-                </a>
-                <button type="button" class="cert-cred-bar" data-open-cert="huawei-bigdata" title="Buka Kredensial">
-                  <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                  <span>Credential</span>
-                </button>
+              <!-- Cert 4: Huawei Big Data Mining -->
+              <div class="cert-carousel-slide" data-category="ai-data">
+                <div class="cert-visual-card">
+                  <div class="cert-thumb-box">
+                    <span class="cert-file-badge">IMAGE</span>
+                    <a href="javascript:void(0)" class="cert-thumb-link" data-open-cert="huawei-bigdata" title="Buka Pratinjau Kredensial">
+                      <img src="images/certificates/cert-huawei-bigdata.png" alt="Sertifikat Big Data Mining - Huawei" loading="lazy">
+                    </a>
+                    <button type="button" class="cert-cred-bar" data-open-cert="huawei-bigdata" title="Buka Kredensial">
+                      <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                      <span>Credential</span>
+                    </button>
+                  </div>
+                  <div class="cert-meta-box">
+                    <div class="cert-date-accent">2024 · No Expired</div>
+                    <h4 class="cert-card-heading">Big Data Mining</h4>
+                    <div class="cert-card-sub"><i class="fa-regular fa-building" style="margin-right: 5px; opacity: 0.7;"></i>Huawei</div>
+                  </div>
+                </div>
               </div>
-              <div class="cert-meta-box">
-                <div class="cert-date-accent">2024 · No Expired</div>
-                <h4 class="cert-card-heading">Big Data Mining</h4>
-                <div class="cert-card-sub"><i class="fa-regular fa-building" style="margin-right: 5px; opacity: 0.7;"></i>Huawei</div>
-              </div>
-            </div>
 
-            <!-- Cert 5: Huawei Python Programming Basic -->
-            <div class="cert-visual-card" data-category="programming">
-              <div class="cert-thumb-box">
-                <span class="cert-file-badge">IMAGE</span>
-                <a href="javascript:void(0)" class="cert-thumb-link" data-open-cert="huawei-python" title="Buka Pratinjau Kredensial">
-                  <img src="images/certificates/cert-huawei-python.png" alt="Sertifikat Python Programming Basic - Huawei" loading="lazy">
-                </a>
-                <button type="button" class="cert-cred-bar" data-open-cert="huawei-python" title="Buka Kredensial">
-                  <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                  <span>Credential</span>
-                </button>
+              <!-- Cert 5: Huawei Python Programming Basic -->
+              <div class="cert-carousel-slide" data-category="programming">
+                <div class="cert-visual-card">
+                  <div class="cert-thumb-box">
+                    <span class="cert-file-badge">IMAGE</span>
+                    <a href="javascript:void(0)" class="cert-thumb-link" data-open-cert="huawei-python" title="Buka Pratinjau Kredensial">
+                      <img src="images/certificates/cert-huawei-python.png" alt="Sertifikat Python Programming Basic - Huawei" loading="lazy">
+                    </a>
+                    <button type="button" class="cert-cred-bar" data-open-cert="huawei-python" title="Buka Kredensial">
+                      <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                      <span>Credential</span>
+                    </button>
+                  </div>
+                  <div class="cert-meta-box">
+                    <div class="cert-date-accent">2025 · No Expired</div>
+                    <h4 class="cert-card-heading">Python Programming Basic</h4>
+                    <div class="cert-card-sub"><i class="fa-regular fa-building" style="margin-right: 5px; opacity: 0.7;"></i>Huawei</div>
+                  </div>
+                </div>
               </div>
-              <div class="cert-meta-box">
-                <div class="cert-date-accent">2025 · No Expired</div>
-                <h4 class="cert-card-heading">Python Programming Basic</h4>
-                <div class="cert-card-sub"><i class="fa-regular fa-building" style="margin-right: 5px; opacity: 0.7;"></i>Huawei</div>
-              </div>
-            </div>
 
-            <!-- Cert 6: Huawei Algorithm & Design -->
-            <div class="cert-visual-card" data-category="programming">
-              <div class="cert-thumb-box">
-                <span class="cert-file-badge">IMAGE</span>
-                <a href="javascript:void(0)" class="cert-thumb-link" data-open-cert="huawei-algo" title="Buka Pratinjau Kredensial">
-                  <img src="images/certificates/cert-huawei-algo.png" alt="Sertifikat Algorithm & Design - Huawei" loading="lazy">
-                </a>
-                <button type="button" class="cert-cred-bar" data-open-cert="huawei-algo" title="Buka Kredensial">
-                  <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                  <span>Credential</span>
-                </button>
+              <!-- Cert 6: Huawei Algorithm & Design -->
+              <div class="cert-carousel-slide" data-category="programming">
+                <div class="cert-visual-card">
+                  <div class="cert-thumb-box">
+                    <span class="cert-file-badge">IMAGE</span>
+                    <a href="javascript:void(0)" class="cert-thumb-link" data-open-cert="huawei-algo" title="Buka Pratinjau Kredensial">
+                      <img src="images/certificates/cert-huawei-algo.png" alt="Sertifikat Algorithm & Design - Huawei" loading="lazy">
+                    </a>
+                    <button type="button" class="cert-cred-bar" data-open-cert="huawei-algo" title="Buka Kredensial">
+                      <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                      <span>Credential</span>
+                    </button>
+                  </div>
+                  <div class="cert-meta-box">
+                    <div class="cert-date-accent">2025 · No Expired</div>
+                    <h4 class="cert-card-heading">Algorithm & Design</h4>
+                    <div class="cert-card-sub"><i class="fa-regular fa-building" style="margin-right: 5px; opacity: 0.7;"></i>Huawei</div>
+                  </div>
+                </div>
               </div>
-              <div class="cert-meta-box">
-                <div class="cert-date-accent">2025 · No Expired</div>
-                <h4 class="cert-card-heading">Algorithm & Design</h4>
-                <div class="cert-card-sub"><i class="fa-regular fa-building" style="margin-right: 5px; opacity: 0.7;"></i>Huawei</div>
-              </div>
-            </div>
 
-            <!-- Cert 7: Huawei AI Basic -->
-            <div class="cert-visual-card" data-category="ai-data">
-              <div class="cert-thumb-box">
-                <span class="cert-file-badge">IMAGE</span>
-                <a href="javascript:void(0)" class="cert-thumb-link" data-open-cert="huawei-ai-basic" title="Buka Pratinjau Kredensial">
-                  <img src="images/certificates/cert-huawei-ai-basic.png" alt="Sertifikat AI Basic - Huawei" loading="lazy">
-                </a>
-                <button type="button" class="cert-cred-bar" data-open-cert="huawei-ai-basic" title="Buka Kredensial">
-                  <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                  <span>Credential</span>
-                </button>
+              <!-- Cert 7: Huawei AI Basic -->
+              <div class="cert-carousel-slide" data-category="ai-data">
+                <div class="cert-visual-card">
+                  <div class="cert-thumb-box">
+                    <span class="cert-file-badge">IMAGE</span>
+                    <a href="javascript:void(0)" class="cert-thumb-link" data-open-cert="huawei-ai-basic" title="Buka Pratinjau Kredensial">
+                      <img src="images/certificates/cert-huawei-ai-basic.png" alt="Sertifikat AI Basic - Huawei" loading="lazy">
+                    </a>
+                    <button type="button" class="cert-cred-bar" data-open-cert="huawei-ai-basic" title="Buka Kredensial">
+                      <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                      <span>Credential</span>
+                    </button>
+                  </div>
+                  <div class="cert-meta-box">
+                    <div class="cert-date-accent">2025 · No Expired</div>
+                    <h4 class="cert-card-heading">AI Basic</h4>
+                    <div class="cert-card-sub"><i class="fa-regular fa-building" style="margin-right: 5px; opacity: 0.7;"></i>Huawei</div>
+                  </div>
+                </div>
               </div>
-              <div class="cert-meta-box">
-                <div class="cert-date-accent">2025 · No Expired</div>
-                <h4 class="cert-card-heading">AI Basic</h4>
-                <div class="cert-card-sub"><i class="fa-regular fa-building" style="margin-right: 5px; opacity: 0.7;"></i>Huawei</div>
-              </div>
-            </div>
 
-            <!-- Cert 8: Huawei Overview of AI -->
-            <div class="cert-visual-card" data-category="ai-data">
-              <div class="cert-thumb-box">
-                <span class="cert-file-badge">IMAGE</span>
-                <a href="javascript:void(0)" class="cert-thumb-link" data-open-cert="huawei-ai-overview" title="Buka Pratinjau Kredensial">
-                  <img src="images/certificates/cert-huawei-ai-overview.png" alt="Sertifikat Overview of AI - Huawei" loading="lazy">
-                </a>
-                <button type="button" class="cert-cred-bar" data-open-cert="huawei-ai-overview" title="Buka Kredensial">
-                  <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                  <span>Credential</span>
-                </button>
+              <!-- Cert 8: Huawei Overview of AI -->
+              <div class="cert-carousel-slide" data-category="ai-data">
+                <div class="cert-visual-card">
+                  <div class="cert-thumb-box">
+                    <span class="cert-file-badge">IMAGE</span>
+                    <a href="javascript:void(0)" class="cert-thumb-link" data-open-cert="huawei-ai-overview" title="Buka Pratinjau Kredensial">
+                      <img src="images/certificates/cert-huawei-ai-overview.png" alt="Sertifikat Overview of AI - Huawei" loading="lazy">
+                    </a>
+                    <button type="button" class="cert-cred-bar" data-open-cert="huawei-ai-overview" title="Buka Kredensial">
+                      <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                      <span>Credential</span>
+                    </button>
+                  </div>
+                  <div class="cert-meta-box">
+                    <div class="cert-date-accent">2025 · No Expired</div>
+                    <h4 class="cert-card-heading">Overview of AI</h4>
+                    <div class="cert-card-sub"><i class="fa-regular fa-building" style="margin-right: 5px; opacity: 0.7;"></i>Huawei</div>
+                  </div>
+                </div>
               </div>
-              <div class="cert-meta-box">
-                <div class="cert-date-accent">2025 · No Expired</div>
-                <h4 class="cert-card-heading">Overview of AI</h4>
-                <div class="cert-card-sub"><i class="fa-regular fa-building" style="margin-right: 5px; opacity: 0.7;"></i>Huawei</div>
-              </div>
-            </div>
 
-            <!-- Cert 9: Huawei Computer Network -->
-            <div class="cert-visual-card" data-category="network">
-              <div class="cert-thumb-box">
-                <span class="cert-file-badge">IMAGE</span>
-                <a href="javascript:void(0)" class="cert-thumb-link" data-open-cert="huawei-network" title="Buka Pratinjau Kredensial">
-                  <img src="images/certificates/cert-huawei-network.png" alt="Sertifikat Computer Network - Huawei" loading="lazy">
-                </a>
-                <button type="button" class="cert-cred-bar" data-open-cert="huawei-network" title="Buka Kredensial">
-                  <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                  <span>Credential</span>
-                </button>
+              <!-- Cert 9: Huawei Computer Network -->
+              <div class="cert-carousel-slide" data-category="network">
+                <div class="cert-visual-card">
+                  <div class="cert-thumb-box">
+                    <span class="cert-file-badge">IMAGE</span>
+                    <a href="javascript:void(0)" class="cert-thumb-link" data-open-cert="huawei-network" title="Buka Pratinjau Kredensial">
+                      <img src="images/certificates/cert-huawei-network.png" alt="Sertifikat Computer Network - Huawei" loading="lazy">
+                    </a>
+                    <button type="button" class="cert-cred-bar" data-open-cert="huawei-network" title="Buka Kredensial">
+                      <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                      <span>Credential</span>
+                    </button>
+                  </div>
+                  <div class="cert-meta-box">
+                    <div class="cert-date-accent">2025 · No Expired</div>
+                    <h4 class="cert-card-heading">Computer Network</h4>
+                    <div class="cert-card-sub"><i class="fa-regular fa-building" style="margin-right: 5px; opacity: 0.7;"></i>Huawei</div>
+                  </div>
+                </div>
               </div>
-              <div class="cert-meta-box">
-                <div class="cert-date-accent">2025 · No Expired</div>
-                <h4 class="cert-card-heading">Computer Network</h4>
-                <div class="cert-card-sub"><i class="fa-regular fa-building" style="margin-right: 5px; opacity: 0.7;"></i>Huawei</div>
-              </div>
-            </div>
 
-            <!-- Cert 10: Huawei Computer Network CRA -->
-            <div class="cert-visual-card" data-category="network">
-              <div class="cert-thumb-box">
-                <span class="cert-file-badge">IMAGE</span>
-                <a href="javascript:void(0)" class="cert-thumb-link" data-open-cert="huawei-network-cra" title="Buka Pratinjau Kredensial">
-                  <img src="images/certificates/cert-huawei-network-cra.png" alt="Sertifikat Computer Network CRA - Huawei" loading="lazy">
-                </a>
-                <button type="button" class="cert-cred-bar" data-open-cert="huawei-network-cra" title="Buka Kredensial">
-                  <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                  <span>Credential</span>
-                </button>
+              <!-- Cert 10: Huawei Computer Network CRA -->
+              <div class="cert-carousel-slide" data-category="network">
+                <div class="cert-visual-card">
+                  <div class="cert-thumb-box">
+                    <span class="cert-file-badge">IMAGE</span>
+                    <a href="javascript:void(0)" class="cert-thumb-link" data-open-cert="huawei-network-cra" title="Buka Pratinjau Kredensial">
+                      <img src="images/certificates/cert-huawei-network-cra.png" alt="Sertifikat Computer Network CRA - Huawei" loading="lazy">
+                    </a>
+                    <button type="button" class="cert-cred-bar" data-open-cert="huawei-network-cra" title="Buka Kredensial">
+                      <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                      <span>Credential</span>
+                    </button>
+                  </div>
+                  <div class="cert-meta-box">
+                    <div class="cert-date-accent">2025 · No Expired</div>
+                    <h4 class="cert-card-heading">Computer Network (CRA)</h4>
+                    <div class="cert-card-sub"><i class="fa-regular fa-building" style="margin-right: 5px; opacity: 0.7;"></i>Huawei</div>
+                  </div>
+                </div>
               </div>
-              <div class="cert-meta-box">
-                <div class="cert-date-accent">2025 · No Expired</div>
-                <h4 class="cert-card-heading">Computer Network (CRA)</h4>
-                <div class="cert-card-sub"><i class="fa-regular fa-building" style="margin-right: 5px; opacity: 0.7;"></i>Huawei</div>
-              </div>
-            </div>
 
-            <!-- Cert 11: Huawei Data Management & Analytics -->
-            <div class="cert-visual-card" data-category="ai-data">
-              <div class="cert-thumb-box">
-                <span class="cert-file-badge">IMAGE</span>
-                <a href="javascript:void(0)" class="cert-thumb-link" data-open-cert="huawei-datamgmt" title="Buka Pratinjau Kredensial">
-                  <img src="images/certificates/cert-huawei-datamgmt.png" alt="Sertifikat Data Management & Analytics - Huawei" loading="lazy">
-                </a>
-                <button type="button" class="cert-cred-bar" data-open-cert="huawei-datamgmt" title="Buka Kredensial">
-                  <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                  <span>Credential</span>
-                </button>
+              <!-- Cert 11: Huawei Data Management & Analytics -->
+              <div class="cert-carousel-slide" data-category="ai-data">
+                <div class="cert-visual-card">
+                  <div class="cert-thumb-box">
+                    <span class="cert-file-badge">IMAGE</span>
+                    <a href="javascript:void(0)" class="cert-thumb-link" data-open-cert="huawei-datamgmt" title="Buka Pratinjau Kredensial">
+                      <img src="images/certificates/cert-huawei-datamgmt.png" alt="Sertifikat Data Management & Analytics - Huawei" loading="lazy">
+                    </a>
+                    <button type="button" class="cert-cred-bar" data-open-cert="huawei-datamgmt" title="Buka Kredensial">
+                      <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                      <span>Credential</span>
+                    </button>
+                  </div>
+                  <div class="cert-meta-box">
+                    <div class="cert-date-accent">2025 · No Expired</div>
+                    <h4 class="cert-card-heading">Data Management & Analytics</h4>
+                    <div class="cert-card-sub"><i class="fa-regular fa-building" style="margin-right: 5px; opacity: 0.7;"></i>Huawei</div>
+                  </div>
+                </div>
               </div>
-              <div class="cert-meta-box">
-                <div class="cert-date-accent">2025 · No Expired</div>
-                <h4 class="cert-card-heading">Data Management & Analytics</h4>
-                <div class="cert-card-sub"><i class="fa-regular fa-building" style="margin-right: 5px; opacity: 0.7;"></i>Huawei</div>
-              </div>
-            </div>
 
-            <!-- Cert 12: Huawei Data Management CRA -->
-            <div class="cert-visual-card" data-category="network">
-              <div class="cert-thumb-box">
-                <span class="cert-file-badge">IMAGE</span>
-                <a href="javascript:void(0)" class="cert-thumb-link" data-open-cert="huawei-datamgmt-cra" title="Buka Pratinjau Kredensial">
-                  <img src="images/certificates/cert-huawei-datamgmt-cra.png" alt="Sertifikat Data Management CRA - Huawei" loading="lazy">
-                </a>
-                <button type="button" class="cert-cred-bar" data-open-cert="huawei-datamgmt-cra" title="Buka Kredensial">
-                  <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                  <span>Credential</span>
-                </button>
+              <!-- Cert 12: Huawei Data Management CRA -->
+              <div class="cert-carousel-slide" data-category="network">
+                <div class="cert-visual-card">
+                  <div class="cert-thumb-box">
+                    <span class="cert-file-badge">IMAGE</span>
+                    <a href="javascript:void(0)" class="cert-thumb-link" data-open-cert="huawei-datamgmt-cra" title="Buka Pratinjau Kredensial">
+                      <img src="images/certificates/cert-huawei-datamgmt-cra.png" alt="Sertifikat Data Management CRA - Huawei" loading="lazy">
+                    </a>
+                    <button type="button" class="cert-cred-bar" data-open-cert="huawei-datamgmt-cra" title="Buka Kredensial">
+                      <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                      <span>Credential</span>
+                    </button>
+                  </div>
+                  <div class="cert-meta-box">
+                    <div class="cert-date-accent">2025 · No Expired</div>
+                    <h4 class="cert-card-heading">Data Management (CRA)</h4>
+                    <div class="cert-card-sub"><i class="fa-regular fa-building" style="margin-right: 5px; opacity: 0.7;"></i>Huawei</div>
+                  </div>
+                </div>
               </div>
-              <div class="cert-meta-box">
-                <div class="cert-date-accent">2025 · No Expired</div>
-                <h4 class="cert-card-heading">Data Management (CRA)</h4>
-                <div class="cert-card-sub"><i class="fa-regular fa-building" style="margin-right: 5px; opacity: 0.7;"></i>Huawei</div>
-              </div>
-            </div>
 
-            <!-- Cert 13: Huawei Information Representation -->
-            <div class="cert-visual-card" data-category="programming">
-              <div class="cert-thumb-box">
-                <span class="cert-file-badge">IMAGE</span>
-                <a href="javascript:void(0)" class="cert-thumb-link" data-open-cert="huawei-inforep" title="Buka Pratinjau Kredensial">
-                  <img src="images/certificates/cert-huawei-inforep.png" alt="Sertifikat Information Representation - Huawei" loading="lazy">
-                </a>
-                <button type="button" class="cert-cred-bar" data-open-cert="huawei-inforep" title="Buka Kredensial">
-                  <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                  <span>Credential</span>
-                </button>
+              <!-- Cert 13: Huawei Information Representation -->
+              <div class="cert-carousel-slide" data-category="programming">
+                <div class="cert-visual-card">
+                  <div class="cert-thumb-box">
+                    <span class="cert-file-badge">IMAGE</span>
+                    <a href="javascript:void(0)" class="cert-thumb-link" data-open-cert="huawei-inforep" title="Buka Pratinjau Kredensial">
+                      <img src="images/certificates/cert-huawei-inforep.png" alt="Sertifikat Information Representation - Huawei" loading="lazy">
+                    </a>
+                    <button type="button" class="cert-cred-bar" data-open-cert="huawei-inforep" title="Buka Kredensial">
+                      <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                      <span>Credential</span>
+                    </button>
+                  </div>
+                  <div class="cert-meta-box">
+                    <div class="cert-date-accent">2025 · No Expired</div>
+                    <h4 class="cert-card-heading">Information Representation</h4>
+                    <div class="cert-card-sub"><i class="fa-regular fa-building" style="margin-right: 5px; opacity: 0.7;"></i>Huawei</div>
+                  </div>
+                </div>
               </div>
-              <div class="cert-meta-box">
-                <div class="cert-date-accent">2025 · No Expired</div>
-                <h4 class="cert-card-heading">Information Representation</h4>
-                <div class="cert-card-sub"><i class="fa-regular fa-building" style="margin-right: 5px; opacity: 0.7;"></i>Huawei</div>
-              </div>
-            </div>
 
-            <!-- Cert 14: Huawei Information Representation CRA -->
-            <div class="cert-visual-card" data-category="network">
-              <div class="cert-thumb-box">
-                <span class="cert-file-badge">IMAGE</span>
-                <a href="javascript:void(0)" class="cert-thumb-link" data-open-cert="huawei-inforep-cra" title="Buka Pratinjau Kredensial">
-                  <img src="images/certificates/cert-huawei-inforep-cra.png" alt="Sertifikat Information Representation CRA - Huawei" loading="lazy">
-                </a>
-                <button type="button" class="cert-cred-bar" data-open-cert="huawei-inforep-cra" title="Buka Kredensial">
-                  <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                  <span>Credential</span>
-                </button>
+              <!-- Cert 14: Huawei Information Representation CRA -->
+              <div class="cert-carousel-slide" data-category="network">
+                <div class="cert-visual-card">
+                  <div class="cert-thumb-box">
+                    <span class="cert-file-badge">IMAGE</span>
+                    <a href="javascript:void(0)" class="cert-thumb-link" data-open-cert="huawei-inforep-cra" title="Buka Pratinjau Kredensial">
+                      <img src="images/certificates/cert-huawei-inforep-cra.png" alt="Sertifikat Information Representation CRA - Huawei" loading="lazy">
+                    </a>
+                    <button type="button" class="cert-cred-bar" data-open-cert="huawei-inforep-cra" title="Buka Kredensial">
+                      <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                      <span>Credential</span>
+                    </button>
+                  </div>
+                  <div class="cert-meta-box">
+                    <div class="cert-date-accent">2025 · No Expired</div>
+                    <h4 class="cert-card-heading">Information Representation (CRA)</h4>
+                    <div class="cert-card-sub"><i class="fa-regular fa-building" style="margin-right: 5px; opacity: 0.7;"></i>Huawei</div>
+                  </div>
+                </div>
               </div>
-              <div class="cert-meta-box">
-                <div class="cert-date-accent">2025 · No Expired</div>
-                <h4 class="cert-card-heading">Information Representation (CRA)</h4>
-                <div class="cert-card-sub"><i class="fa-regular fa-building" style="margin-right: 5px; opacity: 0.7;"></i>Huawei</div>
-              </div>
+
             </div>
           </div>
         </div>
