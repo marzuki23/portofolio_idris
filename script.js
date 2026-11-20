@@ -809,7 +809,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const btnCertPrev = document.getElementById("certSlidePrev");
   const btnCertNext = document.getElementById("certSlideNext");
   const certFilterBtns = document.querySelectorAll("[data-cert-filter]");
-  const certSlides = document.querySelectorAll(".cert-carousel-slide");
+  const certSlides = document.querySelectorAll(".cert-carousel-slide, .cert-grid-item");
 
   function updateCertNavButtons() {
     if (!certTrack || !btnCertPrev || !btnCertNext) return;

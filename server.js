@@ -200,7 +200,12 @@ function serveStatic(req, res, urlPath) {
     res.end('Forbidden');
     return;
   }
-  if (urlPath === '/') filePath = path.join(ROOT, 'index.html');
+  if (urlPath === '/') {
+    filePath = path.join(ROOT, 'index.html');
+  } else if (!path.extname(urlPath)) {
+    const htmlCandidate = path.join(ROOT, decodeURIComponent(urlPath) + '.html');
+    if (fs.existsSync(htmlCandidate)) filePath = htmlCandidate;
+  }
 
   fs.stat(filePath, (err, stat) => {
     if (err || !stat.isFile()) {
