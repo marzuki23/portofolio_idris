@@ -496,7 +496,7 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "Belajar Dasar AI",
       issuer: "Dicoding Indonesia",
       badge: "PDF",
-      date: "Jan 2026 – Jan 2029",
+      date: "Sep 2025 – Sep 2028",
       downloadUrl: "images/certificates/cert-dicoding-ai.jpg",
       pages: [
         "images/certificates/cert-dicoding-ai.jpg",

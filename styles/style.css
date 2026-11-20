@@ -1448,9 +1448,14 @@ body {
   color: var(--text-primary);
 }
 
-/* --- SECTION 4: EDUCATION & CREDENTIALS SHOWCASE --- */
+/* --- SECTION 4: EDUCATION & FORMAL STUDIES --- */
+.education-section {
+  padding: 85px 0 50px;
+  position: relative;
+}
+
 .education-showcase-wrapper {
-  margin-bottom: 60px;
+  margin-bottom: 0;
 }
 
 .education-showcase-header {
@@ -1609,9 +1614,22 @@ body {
   margin: 0;
 }
 
-/* --- CERTIFICATIONS & CREDENTIALS SHOWCASE --- */
+/* --- SECTION 5: CERTIFICATIONS & CREDENTIALS SHOWCASE --- */
+.certifications-section {
+  padding: 85px 0 110px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.012);
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+}
+
+[data-theme="light"] .certifications-section {
+  background: rgba(248, 250, 252, 0.6);
+  border-color: rgba(226, 232, 240, 0.8);
+}
+
 .certifications-showcase-wrapper {
-  margin-top: 20px;
+  margin-top: 0;
 }
 
 .cert-section-header {
