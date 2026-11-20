@@ -1480,25 +1480,18 @@ body {
   color: var(--text-primary);
 }
 
-.cert-drive-link {
+.cert-count-pill {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 700;
-  color: var(--text-secondary);
-  background: var(--bg-subtle);
-  border: 1px solid var(--border-light);
-  padding: 6px 12px;
-  border-radius: var(--radius-sm);
-  text-decoration: none;
-  transition: var(--transition-fast);
-}
-
-.cert-drive-link:hover {
   color: var(--accent-cyan);
-  border-color: rgba(56, 189, 248, 0.4);
-  background: rgba(56, 189, 248, 0.08);
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  padding: 5px 12px;
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.02em;
 }
 
 /* Visual Certificate Preview Grid (Screenshot Style) */

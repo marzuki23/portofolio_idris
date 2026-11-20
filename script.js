@@ -496,9 +496,8 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "Belajar Dasar AI",
       issuer: "Dicoding Indonesia",
       badge: "PDF",
-      date: "08 Jan 2026 – Jan 2029",
-      driveUrl: "https://drive.google.com/file/d/1dbkYit87aQaEXl32l2oFUbfVseqO2M2w/view?usp=sharing",
-      downloadUrl: "https://drive.google.com/uc?export=download&id=1dbkYit87aQaEXl32l2oFUbfVseqO2M2w",
+      date: "Jan 2026 – Jan 2029",
+      downloadUrl: "images/certificates/cert-dicoding-ai.jpg",
       pages: [
         "images/certificates/cert-dicoding-ai.jpg",
         "images/certificates/cert-dicoding-ai-p2.jpg"
@@ -509,8 +508,7 @@ document.addEventListener("DOMContentLoaded", function () {
       issuer: "RevoU",
       badge: "JPG",
       date: "15 Mar 2024",
-      driveUrl: "https://drive.google.com/file/d/1t3JJhk__GRZuDCGBuQEFM2h0elcXzbKP/view?usp=sharing",
-      downloadUrl: "https://drive.google.com/uc?export=download&id=1t3JJhk__GRZuDCGBuQEFM2h0elcXzbKP",
+      downloadUrl: "images/certificates/cert-revou-data.jpg",
       pages: [
         "images/certificates/cert-revou-data.jpg"
       ]
@@ -519,9 +517,8 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "HCIA-Storage V5.0 Course",
       issuer: "Huawei ICT Academy",
       badge: "PNG",
-      date: "Enterprise Storage Architecture",
-      driveUrl: "https://drive.google.com/file/d/1A7Mbq7s2SdxEUItsF9dJjYtbJYONe6Pe/view?usp=sharing",
-      downloadUrl: "https://drive.google.com/uc?export=download&id=1A7Mbq7s2SdxEUItsF9dJjYtbJYONe6Pe",
+      date: "Huawei ICT Academy",
+      downloadUrl: "images/certificates/cert-huawei-storage.png",
       pages: [
         "images/certificates/cert-huawei-storage.png"
       ]
@@ -530,9 +527,8 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "Big Data Mining",
       issuer: "Huawei ICT Academy",
       badge: "PNG",
-      date: "Distributed Data Processing",
-      driveUrl: "https://drive.google.com/file/d/1KG6aIV8CSoQhEeub7T5Pq1Y501yyK3GV/view?usp=sharing",
-      downloadUrl: "https://drive.google.com/uc?export=download&id=1KG6aIV8CSoQhEeub7T5Pq1Y501yyK3GV",
+      date: "Huawei ICT Academy",
+      downloadUrl: "images/certificates/cert-huawei-bigdata.png",
       pages: [
         "images/certificates/cert-huawei-bigdata.png"
       ]
@@ -541,33 +537,100 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "Python Programming Basic",
       issuer: "Huawei ICT Academy",
       badge: "PNG",
-      date: "Python Core & OOP",
-      driveUrl: "https://drive.google.com/file/d/1SF_iyrlhll-l-JOnU77XbmvzCemMqZo5/view?usp=sharing",
-      downloadUrl: "https://drive.google.com/uc?export=download&id=1SF_iyrlhll-l-JOnU77XbmvzCemMqZo5",
+      date: "Huawei ICT Academy",
+      downloadUrl: "images/certificates/cert-huawei-python.png",
       pages: [
         "images/certificates/cert-huawei-python.png"
+      ]
+    },
+    "huawei-algo": {
+      title: "Algorithm & Design",
+      issuer: "Huawei ICT Academy",
+      badge: "PNG",
+      date: "Huawei ICT Academy",
+      downloadUrl: "images/certificates/cert-huawei-algo.png",
+      pages: [
+        "images/certificates/cert-huawei-algo.png"
+      ]
+    },
+    "huawei-ai-basic": {
+      title: "AI Basic",
+      issuer: "Huawei ICT Academy",
+      badge: "PNG",
+      date: "Huawei ICT Academy",
+      downloadUrl: "images/certificates/cert-huawei-ai-basic.png",
+      pages: [
+        "images/certificates/cert-huawei-ai-basic.png"
+      ]
+    },
+    "huawei-ai-overview": {
+      title: "Overview of AI",
+      issuer: "Huawei ICT Academy",
+      badge: "PNG",
+      date: "Huawei ICT Academy",
+      downloadUrl: "images/certificates/cert-huawei-ai-overview.png",
+      pages: [
+        "images/certificates/cert-huawei-ai-overview.png"
       ]
     },
     "huawei-network": {
       title: "Computer Network",
       issuer: "Huawei ICT Academy",
       badge: "PNG",
-      date: "TCP/IP & Network Design",
-      driveUrl: "https://drive.google.com/file/d/11dUFNuqJXtS8wovlF5ewr_D7yy_pwT70/view?usp=sharing",
-      downloadUrl: "https://drive.google.com/uc?export=download&id=11dUFNuqJXtS8wovlF5ewr_D7yy_pwT70",
+      date: "Huawei ICT Academy",
+      downloadUrl: "images/certificates/cert-huawei-network.png",
       pages: [
         "images/certificates/cert-huawei-network.png"
       ]
     },
-    "huawei-ai": {
-      title: "AI Basic & Overview of AI",
+    "huawei-network-cra": {
+      title: "Computer Network (CRA)",
       issuer: "Huawei ICT Academy",
       badge: "PNG",
-      date: "Artificial Intelligence Foundation",
-      driveUrl: "https://drive.google.com/file/d/1CA8kVgsvxPgar1fIlsiXi9uZ6xkLkRBz/view?usp=sharing",
-      downloadUrl: "https://drive.google.com/uc?export=download&id=1CA8kVgsvxPgar1fIlsiXi9uZ6xkLkRBz",
+      date: "Huawei ICT Academy",
+      downloadUrl: "images/certificates/cert-huawei-network-cra.png",
       pages: [
-        "images/certificates/cert-huawei-ai.png"
+        "images/certificates/cert-huawei-network-cra.png"
+      ]
+    },
+    "huawei-datamgmt": {
+      title: "Data Management & Analytics",
+      issuer: "Huawei ICT Academy",
+      badge: "PNG",
+      date: "Huawei ICT Academy",
+      downloadUrl: "images/certificates/cert-huawei-datamgmt.png",
+      pages: [
+        "images/certificates/cert-huawei-datamgmt.png"
+      ]
+    },
+    "huawei-datamgmt-cra": {
+      title: "Data Management (CRA)",
+      issuer: "Huawei ICT Academy",
+      badge: "PNG",
+      date: "Huawei ICT Academy",
+      downloadUrl: "images/certificates/cert-huawei-datamgmt-cra.png",
+      pages: [
+        "images/certificates/cert-huawei-datamgmt-cra.png"
+      ]
+    },
+    "huawei-inforep": {
+      title: "Information Representation & Data Organization",
+      issuer: "Huawei ICT Academy",
+      badge: "PNG",
+      date: "Huawei ICT Academy",
+      downloadUrl: "images/certificates/cert-huawei-inforep.png",
+      pages: [
+        "images/certificates/cert-huawei-inforep.png"
+      ]
+    },
+    "huawei-inforep-cra": {
+      title: "Information Representation (CRA)",
+      issuer: "Huawei ICT Academy",
+      badge: "PNG",
+      date: "Huawei ICT Academy",
+      downloadUrl: "images/certificates/cert-huawei-inforep-cra.png",
+      pages: [
+        "images/certificates/cert-huawei-inforep-cra.png"
       ]
     }
   };
@@ -582,7 +645,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const zoomVal = document.getElementById("credZoomVal");
     const btnClose = document.getElementById("credModalClose");
     const btnDownload = document.getElementById("credModalDownload");
-    const btnDrive = document.getElementById("credModalDrive");
     const btnPrev = document.getElementById("credPagePrev");
     const btnNext = document.getElementById("credPageNext");
     const btnZoomIn = document.getElementById("credZoomIn");
@@ -622,8 +684,10 @@ document.addEventListener("DOMContentLoaded", function () {
       currentZoom = 100;
 
       docName.textContent = data.title;
-      btnDownload.href = data.downloadUrl || data.pages[0];
-      btnDrive.href = data.driveUrl || "#";
+      if (btnDownload) {
+        btnDownload.href = data.downloadUrl || data.pages[0];
+        btnDownload.setAttribute("download", `${data.title.replace(/[^a-zA-Z0-9_-]/g, "_")}`);
+      }
 
       // Build thumbnail strip
       thumbList.innerHTML = "";
