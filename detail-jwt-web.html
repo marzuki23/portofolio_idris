@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Tegal Culture - Muhammad Idris Marzuki</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/detail.css">
+<script>(function(){const t=localStorage.getItem("portfolio_theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t);})();</script>
+</head>
+
+<body>
+  <div id="cursorDot" class="cursor-dot"></div>
+  <div id="cursorRing" class="cursor-ring"></div>
+  <div id="cursorGlow" class="cursor-glow"></div>
+  <header id="main-header">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html" style="display: flex; align-items: center; gap: 8px; text-decoration: none;">
+          <div class="logo-box">I</div>
+          <div style="color: #fff; font-weight: 800; font-size: 24px; letter-spacing: -1px;">M<span
+              style="color: var(--accent);">.</span></div>
+        </a>
+      </div>
+      <a href="index.html" class="btn-back">← Back</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="detail-hero">
+    <div class="detail-container">
+      <div class="project-hero">
+        <div data-aos="fade-right">
+          <h3>Web Development · Case Study</h3>
+          <h1>Web <span>Tegal Culture</span></h1>
+          <p>
+            Website backend yang mengintegrasikan seluruh kebutuhan project 8, dibangun dengan
+            Python dan CSS. Website ini berperan sebagai database dan penyedia API real-time untuk
+            data budaya Tegal, sehingga data yang ditampilkan di aplikasi mobile selalu terbarui
+            secara otomatis.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">CSS</span>
+            <span class="tag">API</span>
+            <span class="tag">Realtime</span>
+          </div>
+        </div>
+        <div class="project-hero-img" data-aos="zoom-in">
+          <img src="images/portfolios/project9.png" alt="Web Tegal Culture">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="section">
+    <div class="detail-container">
+      <span class="section-tag" data-aos="fade-up">Overview</span>
+      <h1 class="section-title" data-aos="fade-up">Tentang Proyek</h1>
+      <div class="overview-grid">
+        <div class="overview-text" data-aos="fade-right">
+          <p>
+            <b style="color: #fff;">Web Tegal Culture</b> adalah website yang dibangun khusus untuk
+            menjadi tulang punggung (backend) dari aplikasi mobile budaya Tegal pada project 8.
+            Menggunakan Python untuk logika backend dan CSS untuk menata tampilan, website ini
+            menyediakan database dan API real-time yang dikonsumsi langsung oleh aplikasi mobile.
+          </p>
+          <p>
+            Seluruh data budaya Tegal yang dikelola website ini tersimpan dalam database terpusat dan
+            disajikan melalui endpoint API yang cepat dan stabil. Aplikasi mobile project 8 memanfaatkan
+            API tersebut untuk menampilkan data real-time, sementara keamanan akses dijaga melalui token
+            JWT yang diverifikasi oleh backend. Dengan demikian, arsitektur web dan mobile bekerja sebagai
+            satu kesatuan sistem yang sinkron, aman, dan mudah dikembangkan.
+          </p>
+        </div>
+        <div class="overview-stats" data-aos="fade-left">
+          <div class="stat-box">
+            <h2>Python</h2>
+            <p>Backend</p>
+          </div>
+          <div class="stat-box">
+            <h2>API</h2>
+            <p>Integration</p>
+          </div>
+          <div class="stat-box">
+            <h2>Real-time</h2>
+            <p>Data Sync</p>
+          </div>
+          <div class="stat-box">
+            <h2>Web</h2>
+            <p>Platform</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detail -->
+  <section class="section">
+    <div class="detail-container">
+      <span class="section-tag" data-aos="fade-up">Detail</span>
+      <h1 class="section-title" data-aos="fade-up">Rincian Proyek</h1>
+      <div class="detail-flex">
+        <div class="detail-panel" data-aos="fade-right">
+          <h3>Alur Sistem</h3>
+          <ul class="detail-list">
+            <li><span class="dot"></span><div><b>Database</b>Menyimpan seluruh data aplikasi secara terpusat.</div></li>
+            <li><span class="dot"></span><div><b>Backend Python</b>Logika server dan validasi token JWT.</div></li>
+            <li><span class="dot"></span><div><b>API Realtime</b>Endpoint yang menyediakan data terkini bagi aplikasi mobile.</div></li>
+            <li><span class="dot"></span><div><b>Mobile App</b>Mengonsumsi API yang sama dengan tampilan (project 8).</div></li>
+          </ul>
+        </div>
+        <div class="detail-panel" data-aos="fade-left">
+          <h3>Endpoint API</h3>
+          <ul class="detail-list">
+            <li><span class="dot"></span><div><b>GET Data</b>Mengambil data terkini melalui API real-time.</div></li>
+            <li><span class="dot"></span><div><b>POST / Update</b>Menambah dan memperbarui data dari aplikasi.</div></li>
+            <li><span class="dot"></span><div><b>Validasi JWT</b>Setiap permintaan diverifikasi keamanan tokennya.</div></li>
+            <li><span class="dot"></span><div><b>Sinkronisasi</b>Data website dan mobile selalu selaras secara real-time.</div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section alt">
+    <div class="detail-container">
+      <span class="section-tag" data-aos="fade-up">Features</span>
+      <h1 class="section-title" data-aos="fade-up">Fitur Utama</h1>
+      <div class="features-grid">
+        <div class="feature-box" data-aos="fade-up">
+          <span class="feature-icon">🐍</span>
+          <h4>Backend Python</h4>
+          <p>Logika server dan endpoint API ditulis dengan Python yang ringan dan mudah dikelola.</p>
+        </div>
+        <div class="feature-box" data-aos="fade-up" data-aos-delay="100">
+          <span class="feature-icon">🗄️</span>
+          <h4>Database Terpusat</h4>
+          <p>Seluruh data aplikasi tersimpan rapi dan konsisten dalam satu database.</p>
+        </div>
+        <div class="feature-box" data-aos="fade-up" data-aos-delay="200">
+          <span class="feature-icon">🔐</span>
+          <h4>Validasi JWT</h4>
+          <p>Keamanan token JWT memastikan hanya aplikasi terverifikasi yang mengakses data.</p>
+        </div>
+        <div class="feature-box" data-aos="fade-up" data-aos-delay="300">
+          <span class="feature-icon">🔗</span>
+          <h4>Integrasi Mobile</h4>
+          <p>Terintegrasi penuh dengan aplikasi mobile project 8 melalui API yang sama.</p>
+        </div>
+        <div class="feature-box" data-aos="fade-up" data-aos-delay="400">
+          <span class="feature-icon">🎨</span>
+          <h4>Tampilan CSS</h4>
+          <p>Antarmuka web ditata rapi menggunakan CSS agar nyaman dipantau pengguna.</p>
+        </div>
+        <div class="feature-box" data-aos="fade-up" data-aos-delay="500">
+          <span class="feature-icon">🔄</span>
+          <h4>Update Real-time</h4>
+          <p>Perubahan data langsung tersedia di aplikasi tanpa perlu memuat ulang halaman.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section class="section">
+    <div class="detail-container">
+      <span class="section-tag" data-aos="fade-up">Tech Stack</span>
+      <h1 class="section-title" data-aos="fade-up">Teknologi yang Digunakan</h1>
+      <div class="tech-grid" data-aos="fade-up">
+        <span class="tech-item">Python</span>
+        <span class="tech-item">CSS</span>
+        <span class="tech-item">Flask</span>
+        <span class="tech-item">MySQL</span>
+        <span class="tech-item">REST API</span>
+        <span class="tech-item">JWT</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="detail-container">
+      <div class="cta-box" data-aos="zoom-in">
+        <h2>Tertarik dengan Proyek Ini?</h2>
+        <p>Jelajahi lebih banyak karya lainnya di portofolio saya.</p>
+        <a href="index.html" class="btn-primary">Lihat Semua Proyek →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Muhammad Idris Marzuki. Informatics Engineering.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+    window.addEventListener('scroll', function () {
+      const header = document.getElementById('main-header');
+      if (window.scrollY > 50) header.classList.add('scrolled');
+      else header.classList.remove('scrolled');
+    });
+  </script>
+  <script src="js/visitor-tracker.js"></script>
+</body>
+
+</html>

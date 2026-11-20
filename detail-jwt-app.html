@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mobile App Tegal Culture - Muhammad Idris Marzuki</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/detail.css">
+<script>(function(){const t=localStorage.getItem("portfolio_theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t);})();</script>
+</head>
+
+<body>
+  <div id="cursorDot" class="cursor-dot"></div>
+  <div id="cursorRing" class="cursor-ring"></div>
+  <div id="cursorGlow" class="cursor-glow"></div>
+  <header id="main-header">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html" style="display: flex; align-items: center; gap: 8px; text-decoration: none;">
+          <div class="logo-box">I</div>
+          <div style="color: #fff; font-weight: 800; font-size: 24px; letter-spacing: -1px;">M<span
+              style="color: var(--accent);">.</span></div>
+        </a>
+      </div>
+      <a href="index.html" class="btn-back">← Back</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="detail-hero">
+    <div class="detail-container">
+      <div class="project-hero">
+        <div data-aos="fade-right">
+          <h3>Mobile Development · Case Study</h3>
+          <h1>Mobile App <span>Tegal Culture</span></h1>
+          <p>
+            Aplikasi mobile tentang budaya Tegal yang dibangun dengan Flutter dan Dart, menggunakan
+            Supabase sebagai backend, Google Console untuk layanan Google, dan JWT sebagai keamanan
+            token. Seluruh data budaya dan API real-time disediakan oleh backend website pada project 9,
+            sehingga aplikasi selalu sinkron dan aman.
+          </p>
+          <div class="tags">
+            <span class="tag">Flutter</span>
+            <span class="tag">Dart</span>
+            <span class="tag">Supabase</span>
+            <span class="tag">JWT</span>
+          </div>
+        </div>
+        <div class="project-hero-img" data-aos="zoom-in">
+          <img src="images/portfolios/project8.png" alt="Mobile App Tegal Culture">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="section">
+    <div class="detail-container">
+      <span class="section-tag" data-aos="fade-up">Overview</span>
+      <h1 class="section-title" data-aos="fade-up">Tentang Proyek</h1>
+      <div class="overview-grid">
+        <div class="overview-text" data-aos="fade-right">
+          <p>
+            <b style="color: #fff;">Mobile App Tegal Culture</b> adalah aplikasi mobile yang dibangun
+            menggunakan Flutter dan Dart untuk memperkenalkan budaya Tegal kepada masyarakat. Aplikasi
+            dibangun dengan sistem keamanan yang ketat: backend menggunakan Supabase untuk otentikasi
+            dan penyimpanan, layanan Google dikonfigurasi melalui Google Console, dan setiap akses
+            pengguna diamankan menggunakan token JWT sehingga hanya pengguna terverifikasi yang dapat
+            mengakses data.
+          </p>
+          <p>
+            Bagian menarik dari proyek ini adalah arsitekturnya yang terintegrasi penuh dengan project 9.
+            Website pada project 9 berperan sebagai database dan penyedia API real-time, sehingga setiap
+            perubahan data budaya di server langsung tercermin di aplikasi mobile. Dengan kombinasi
+            Flutter, Supabase, JWT, dan API real-time, proyek ini menunjukkan implementasi nyata aplikasi
+            mobile yang aman, dinamis, dan terhubung langsung dengan backend web.
+          </p>
+        </div>
+        <div class="overview-stats" data-aos="fade-left">
+          <div class="stat-box">
+            <h2>JWT</h2>
+            <p>Keamanan Token</p>
+          </div>
+          <div class="stat-box">
+            <h2>Supabase</h2>
+            <p>Backend</p>
+          </div>
+          <div class="stat-box">
+            <h2>Real-time</h2>
+            <p>Data Sync</p>
+          </div>
+          <div class="stat-box">
+            <h2>Mobile</h2>
+            <p>Platform</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detail -->
+  <section class="section">
+    <div class="detail-container">
+      <span class="section-tag" data-aos="fade-up">Detail</span>
+      <h1 class="section-title" data-aos="fade-up">Rincian Proyek</h1>
+      <div class="detail-flex">
+        <div class="detail-panel" data-aos="fade-right">
+          <h3>Alur Keamanan</h3>
+          <ul class="detail-list">
+            <li><span class="dot"></span><div><b>Login Google</b>Pengguna masuk melalui akun Gmail yang dikonfigurasi di Google Console.</div></li>
+            <li><span class="dot"></span><div><b>Supabase Auth</b>Autentikasi diverifikasi oleh backend Supabase.</div></li>
+            <li><span class="dot"></span><div><b>Token JWT</b>Setiap sesi dilindungi token JWT yang valid dan memiliki masa berlaku.</div></li>
+            <li><span class="dot"></span><div><b>Akses Data</b>Hanya token valid yang boleh mengakses API dan data dari project 9.</div></li>
+          </ul>
+        </div>
+        <div class="detail-panel" data-aos="fade-left">
+          <h3>Tampilan Aplikasi</h3>
+          <ul class="detail-list">
+            <li><span class="dot"></span><div><b>Splash Screen</b>Pembuka aplikasi dengan branding yang khas.</div></li>
+            <li><span class="dot"></span><div><b>Login</b>Halaman masuk dengan integrasi akun Google.</div></li>
+            <li><span class="dot"></span><div><b>Dashboard</b>Ringkasan data real-time dari API project 9.</div></li>
+            <li><span class="dot"></span><div><b>Profil</b>Informasi pengguna yang masuk dengan aman.</div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section alt">
+    <div class="detail-container">
+      <span class="section-tag" data-aos="fade-up">Features</span>
+      <h1 class="section-title" data-aos="fade-up">Fitur Utama</h1>
+      <div class="features-grid">
+        <div class="feature-box" data-aos="fade-up">
+          <span class="feature-icon">🔐</span>
+          <h4>Keamanan JWT</h4>
+          <p>Setiap akses data diamankan token JWT yang terverifikasi dan memiliki masa berlaku.</p>
+        </div>
+        <div class="feature-box" data-aos="fade-up" data-aos-delay="100">
+          <span class="feature-icon">🗄️</span>
+          <h4>Backend Supabase</h4>
+          <p>Autentikasi dan penyimpanan dikelola oleh Supabase berbasis PostgreSQL.</p>
+        </div>
+        <div class="feature-box" data-aos="fade-up" data-aos-delay="200">
+          <span class="feature-icon">🔗</span>
+          <h4>Integrasi Google</h4>
+          <p>Layanan Google dikonfigurasi melalui Google Console untuk login dan lainnya.</p>
+        </div>
+        <div class="feature-box" data-aos="fade-up" data-aos-delay="300">
+          <span class="feature-icon">📡</span>
+          <h4>API Real-time</h4>
+          <p>Data disinkronkan langsung dari database dan API website project 9.</p>
+        </div>
+        <div class="feature-box" data-aos="fade-up" data-aos-delay="400">
+          <span class="feature-icon">📱</span>
+          <h4>Multi-Platform</h4>
+          <p>Satu basis kode Flutter dan Dart untuk Android maupun iOS.</p>
+        </div>
+        <div class="feature-box" data-aos="fade-up" data-aos-delay="500">
+          <span class="feature-icon">⚡</span>
+          <h4>Performa Dinamis</h4>
+          <p>Antarmuka modern dengan animasi halus dan pembaruan data otomatis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section class="section">
+    <div class="detail-container">
+      <span class="section-tag" data-aos="fade-up">Tech Stack</span>
+      <h1 class="section-title" data-aos="fade-up">Teknologi yang Digunakan</h1>
+      <div class="tech-grid" data-aos="fade-up">
+        <span class="tech-item">Flutter</span>
+        <span class="tech-item">Dart</span>
+        <span class="tech-item">Supabase</span>
+        <span class="tech-item">Google Console</span>
+        <span class="tech-item">JWT</span>
+        <span class="tech-item">REST API</span>
+        <span class="tech-item">Material Design</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="detail-container">
+      <div class="cta-box" data-aos="zoom-in">
+        <h2>Tertarik dengan Proyek Ini?</h2>
+        <p>Jelajahi lebih banyak karya lainnya di portofolio saya.</p>
+        <a href="index.html" class="btn-primary">Lihat Semua Proyek →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Muhammad Idris Marzuki. Informatics Engineering.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+    window.addEventListener('scroll', function () {
+      const header = document.getElementById('main-header');
+      if (window.scrollY > 50) header.classList.add('scrolled');
+      else header.classList.remove('scrolled');
+    });
+  </script>
+  <script src="js/visitor-tracker.js"></script>
+</body>
+
+</html>
