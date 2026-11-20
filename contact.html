@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact · Muhammad Idris Marzuki</title>
+  <meta name="description"
+    content="Hubungi Muhammad Idris Marzuki untuk kolaborasi proyek rekayasa software, aplikasi web & mobile, backend development, atau peluang kerja sama teknologi.">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2338bdf8'/><text x='50%' y='55%' font-size='50' font-weight='900' fill='white' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif'>I</text></svg>">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Unified Modern Stylesheet -->
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <!-- Custom Modern Cursor Follower -->
+  <div id="cursorGlow" class="cursor-glow" aria-hidden="true"></div>
+  <div id="cursorDot" class="cursor-dot" aria-hidden="true"></div>
+  <div id="cursorRing" class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Ambient Atmospheric Glows -->
+  <div class="ambient-glow"></div>
+
+  <!-- Particles Canvas -->
+  <div id="particles-js"></div>
+
+  <!-- Unified Modern Header -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <!-- Monogram Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="Idris Marzuki Home">
+        <span class="brand-badge">I</span>
+        <span class="brand-text">M<span class="brand-dot">.</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="expertise.html" class="nav-link"><i class="fa-solid fa-layer-group"></i> Expertise</a></li>
+          <li><a href="projects.html" class="nav-link"><i class="fa-solid fa-code-fork"></i> Projects</a></li>
+          <li><a href="education.html" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+          <li><a href="certifications.html" class="nav-link"><i class="fa-solid fa-award"></i> Certifications</a></li>
+          <li><a href="contact.html" class="nav-link active"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Button & Theme Toggle -->
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <!-- Theme Toggle Switcher -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Switch Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <a href="https://wa.me/628816532285?text=Halo%20Idris,%20saya%20ingin%20meminta%20CV/Resume%20Anda"
+          target="_blank" rel="noopener noreferrer" class="btn-header-files" title="Request CV via WhatsApp">
+          <i class="fa-solid fa-file-arrow-down"></i> Request CV
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Dropdown Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <a href="expertise.html" class="nav-link mobile-link"><i class="fa-solid fa-layer-group"></i> Expertise</a>
+    <a href="projects.html" class="nav-link mobile-link"><i class="fa-solid fa-code-fork"></i> Projects</a>
+    <a href="education.html" class="nav-link mobile-link"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+    <a href="certifications.html" class="nav-link mobile-link"><i class="fa-solid fa-award"></i> Certifications</a>
+    <a href="contact.html" class="nav-link mobile-link active"><i class="fa-solid fa-paper-plane"></i> Contact</a>
+    <a href="https://wa.me/628816532285?text=Halo%20Idris,%20saya%20ingin%20meminta%20CV/Resume%20Anda" target="_blank"
+      rel="noopener noreferrer" class="btn-header-files"
+      style="display: inline-flex; justify-content: center; margin-top: 8px;">
+      <i class="fa-solid fa-file-arrow-down"></i> Request CV (WhatsApp)
+    </a>
+  </div>
+
+  <main>
+    <!-- STANDALONE CONTACT SECTION -->
+    <section class="certs-hero-section">
+      <div class="container">
+        <!-- Page Header -->
+        <div class="certs-hero-header" data-aos="fade-up">
+          <span class="section-tag"><i class="fa-solid fa-paper-plane"></i> Direct Communication</span>
+          <h1 class="certs-hero-title">Get In Touch & <span class="text-gradient">Collaborate</span></h1>
+          <p class="certs-hero-desc">
+            Terbuka untuk diskusi proyek rekayasa perangkat lunak, konsultasi arsitektur web/mobile, kebutuhan implementasi sistem, maupun peluang kolaborasi teknologi.
+          </p>
+          <div class="certs-stats-row">
+            <span class="certs-stat-badge"><i class="fa-solid fa-location-dot"></i> Kota Tegal, Jawa Tengah</span>
+            <span class="certs-stat-badge"><i class="fa-brands fa-whatsapp"></i> WhatsApp Respon Cepat</span>
+            <span class="certs-stat-badge"><i class="fa-solid fa-envelope"></i> Direct Email (Gmail)</span>
+            <span class="certs-stat-badge"><i class="fa-solid fa-briefcase"></i> Open for Remote & On-site</span>
+          </div>
+        </div>
+
+        <!-- Contact Box Wrapper -->
+        <div class="contact-card-wrapper" style="margin-top: 40px;" data-aos="fade-up" data-aos-delay="100">
+          <div class="contact-header-center">
+            <span class="section-tag">Let's Connect</span>
+            <h2>Ready to build something <span class="text-gradient">extraordinary?</span></h2>
+            <p>
+              Hubungi saya secara langsung melalui salah satu saluran komunikasi di bawah ini. Saya akan membalas pesan Anda sesegera mungkin.
+            </p>
+          </div>
+
+          <!-- Direct Contact Cards Grid -->
+          <div class="contact-cards-grid">
+            <!-- WhatsApp -->
+            <a href="https://wa.me/628816532285?text=Halo%20Idris,%20saya%20ingin%20berdiskusi%20mengenai%20proyek%20atau%20kolaborasi" target="_blank" rel="noopener noreferrer" class="contact-box-card">
+              <div class="contact-box-icon wa">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div class="contact-box-info">
+                <span class="contact-box-badge"><span class="pulse-indicator"></span> Fast Response</span>
+                <h3>WhatsApp Direct</h3>
+                <p>0881-6532-285</p>
+              </div>
+              <div class="contact-box-action">
+                <span>Chat via WhatsApp</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+            </a>
+
+            <!-- Direct Email -->
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=muh.idrismarzuki2301@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-box-card">
+              <div class="contact-box-icon mail">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-box-info">
+                <span class="contact-box-badge">Direct Inbox</span>
+                <h3>Email (Gmail)</h3>
+                <p>muh.idrismarzuki2301@gmail.com</p>
+              </div>
+              <div class="contact-box-action">
+                <span>Compose Email</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+            </a>
+
+            <!-- Location & Availability -->
+            <div class="contact-box-card info-card">
+              <div class="contact-box-icon location">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-box-info">
+                <span class="contact-box-badge">Base Location</span>
+                <h3>Kota Tegal, ID</h3>
+                <p>Jawa Tengah, Indonesia</p>
+              </div>
+              <div class="contact-box-action static">
+                <span>Open for Remote & On-site</span>
+                <i class="fa-solid fa-earth-asia"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Action Buttons -->
+          <div class="contact-quick-actions" style="margin-top: 36px;">
+            <a href="https://wa.me/628816532285?text=Halo%20Idris,%20saya%20ingin%20berdiskusi%20mengenai%20proyek" target="_blank" rel="noopener noreferrer" class="btn-primary btn-shimmer">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>Hubungi via WhatsApp</span>
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=muh.idrismarzuki2301@gmail.com" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Kirim Email Langsung</span>
+            </a>
+            <a href="https://www.linkedin.com/in/muhammad-idris-marzuki-7276a1291" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <span>LinkedIn Profile</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- MODERN FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-copy">
+        &copy; 2026 <strong>Muhammad Idris Marzuki</strong>. Crafted with precision & clean code.
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://github.com/marzuki23" target="_blank" rel="noopener noreferrer" class="social-pill"
+          aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/muhammad-idris-marzuki-7276a1291" target="_blank" rel="noopener noreferrer"
+          class="social-pill" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.instagram.com/m.idris_23" target="_blank" rel="noopener noreferrer" class="social-pill"
+          aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/628816532285" target="_blank" rel="noopener noreferrer" class="social-pill"
+          aria-label="WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+
+      <a href="#" class="back-to-top">
+        <span>Back to top</span>
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 60,
+      easing: 'ease-out-cubic'
+    });
+    window.addEventListener('load', function () {
+      setTimeout(AOS.refresh, 100);
+    });
+  </script>
+
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 65, density: { enable: true, value_area: 850 } },
+        color: { value: ["#38bdf8", "#818cf8", "#22d3ee"] },
+        shape: { type: "circle" },
+        opacity: { value: 0.7, random: true },
+        size: { value: 3.2, random: true },
+        line_linked: { enable: true, distance: 150, color: "#38bdf8", opacity: 0.4, width: 1.2 },
+        move: { enable: true, speed: 2, direction: "none", random: true, straight: false, out_mode: "out" }
+      },
+      interactivity: {
+        detect_on: "window",
+        events: { onhover: { enable: true, mode: "grab" }, onclick: { enable: true, mode: "push" }, resize: true },
+        modes: { grab: { distance: 170, line_linked: { opacity: 0.75 } }, push: { particles_nb: 3 } }
+      },
+      retina_detect: true
+    });
+  </script>
+
+  <!-- Core Interactive Script -->
+  <script src="script.js"></script>
+</body>
+
+</html>

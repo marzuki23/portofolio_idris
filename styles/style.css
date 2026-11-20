@@ -133,8 +133,6 @@ html {
   scroll-padding-top: 90px;
   background-color: var(--bg-main);
   color: var(--text-primary);
-  overflow-x: hidden;
-  max-width: 100vw;
   transition: background-color var(--transition-smooth), color var(--transition-smooth);
 }
 
@@ -143,7 +141,6 @@ body {
   color: var(--text-primary);
   line-height: 1.65;
   overflow-x: hidden;
-  max-width: 100vw;
   position: relative;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;

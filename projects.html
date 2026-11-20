@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects · Muhammad Idris Marzuki</title>
+  <meta name="description"
+    content="Portofolio proyek rekayasa software Muhammad Idris Marzuki: aplikasi mobile Flutter, web Laravel & Flask, backend REST API FastAPI, dan integrasi cloud Supabase.">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2338bdf8'/><text x='50%' y='55%' font-size='50' font-weight='900' fill='white' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif'>I</text></svg>">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Unified Modern Stylesheet -->
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <!-- Custom Modern Cursor Follower -->
+  <div id="cursorGlow" class="cursor-glow" aria-hidden="true"></div>
+  <div id="cursorDot" class="cursor-dot" aria-hidden="true"></div>
+  <div id="cursorRing" class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Ambient Atmospheric Glows -->
+  <div class="ambient-glow"></div>
+
+  <!-- Particles Canvas -->
+  <div id="particles-js"></div>
+
+  <!-- Unified Modern Header -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <!-- Monogram Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="Idris Marzuki Home">
+        <span class="brand-badge">I</span>
+        <span class="brand-text">M<span class="brand-dot">.</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="expertise.html" class="nav-link"><i class="fa-solid fa-layer-group"></i> Expertise</a></li>
+          <li><a href="projects.html" class="nav-link active"><i class="fa-solid fa-code-fork"></i> Projects</a></li>
+          <li><a href="education.html" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+          <li><a href="certifications.html" class="nav-link"><i class="fa-solid fa-award"></i> Certifications</a></li>
+          <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Button & Theme Toggle -->
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <!-- Theme Toggle Switcher -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Switch Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <a href="https://wa.me/628816532285?text=Halo%20Idris,%20saya%20ingin%20meminta%20CV/Resume%20Anda"
+          target="_blank" rel="noopener noreferrer" class="btn-header-files" title="Request CV via WhatsApp">
+          <i class="fa-solid fa-file-arrow-down"></i> Request CV
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Dropdown Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <a href="expertise.html" class="nav-link mobile-link"><i class="fa-solid fa-layer-group"></i> Expertise</a>
+    <a href="projects.html" class="nav-link mobile-link active"><i class="fa-solid fa-code-fork"></i> Projects</a>
+    <a href="education.html" class="nav-link mobile-link"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+    <a href="certifications.html" class="nav-link mobile-link"><i class="fa-solid fa-award"></i> Certifications</a>
+    <a href="contact.html" class="nav-link mobile-link"><i class="fa-solid fa-paper-plane"></i> Contact</a>
+    <a href="https://wa.me/628816532285?text=Halo%20Idris,%20saya%20ingin%20meminta%20CV/Resume%20Anda" target="_blank"
+      rel="noopener noreferrer" class="btn-header-files"
+      style="display: inline-flex; justify-content: center; margin-top: 8px;">
+      <i class="fa-solid fa-file-arrow-down"></i> Request CV (WhatsApp)
+    </a>
+  </div>
+
+  <main>
+    <!-- STANDALONE PROJECTS HERO & GRID SECTION -->
+    <section class="certs-hero-section">
+      <div class="container">
+        <!-- Page Header -->
+        <div class="certs-hero-header" data-aos="fade-up">
+          <span class="section-tag"><i class="fa-solid fa-code-fork"></i> Selected Works</span>
+          <h1 class="certs-hero-title">Featured <span class="text-gradient">Engineering Projects</span></h1>
+          <p class="certs-hero-desc">
+            Kumpulan aplikasi produksi dan studi kasus rekayasa perangkat lunak yang mencakup platform web skala penuh, aplikasi mobile multiplatform, sistem computer vision, serta backend mikro berkeamanan tinggi.
+          </p>
+          <div class="certs-stats-row">
+            <span class="certs-stat-badge"><i class="fa-solid fa-cube"></i> 9 Karya Terverifikasi</span>
+            <span class="certs-stat-badge"><i class="fa-solid fa-mobile-screen"></i> 3 Mobile Apps</span>
+            <span class="certs-stat-badge"><i class="fa-solid fa-globe"></i> 3 Web Platforms</span>
+            <span class="certs-stat-badge"><i class="fa-solid fa-server"></i> 3 Backend & AI Systems</span>
+          </div>
+        </div>
+
+        <!-- Category Filter Pills -->
+        <div class="filter-bar" data-aos="fade-up" data-aos-delay="100" style="margin-top: 36px;">
+          <button class="filter-btn active" data-filter="all">All Projects (9)</button>
+          <button class="filter-btn" data-filter="mobile">Mobile Apps (3)</button>
+          <button class="filter-btn" data-filter="web">Web Platforms (3)</button>
+          <button class="filter-btn" data-filter="backend">Backend & AI (3)</button>
+        </div>
+
+        <!-- Projects Grid Container -->
+        <div class="portfolio-grid" id="portfolio-wrapper">
+
+          <!-- Project 1: E-Commerce -->
+          <a href="detail-ecommerce.html" class="portfolio-card-link" data-category="web" data-aos="fade-up">
+            <div class="portfolio-card spotlight-card">
+              <div class="card-image-box">
+                <img src="images/portfolios/project1.png" alt="E-Commerce Platform" loading="lazy">
+                <span class="card-overlay-badge">Web Platform</span>
+              </div>
+              <div class="card-body">
+                <div class="card-tags">
+                  <span class="card-tag">HTML5 / CSS3</span>
+                  <span class="card-tag">JavaScript</span>
+                  <span class="card-tag">Responsive UI</span>
+                </div>
+                <h3 class="card-title">E-Commerce Platform</h3>
+                <p class="card-text">A modern e-commerce web platform engineered for selling digital products with streamlined checkout and responsive catalogue.</p>
+                <div class="card-footer">
+                  <span>View Case Study</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Project 2: Online Library -->
+          <a href="detail-library.html" class="portfolio-card-link" data-category="web" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-card spotlight-card">
+              <div class="card-image-box">
+                <img src="images/portfolios/project2.png" alt="Online Library CMS" loading="lazy">
+                <span class="card-overlay-badge">CMS Platform</span>
+              </div>
+              <div class="card-body">
+                <div class="card-tags">
+                  <span class="card-tag">Drupal CMS</span>
+                  <span class="card-tag">PHP</span>
+                  <span class="card-tag">MySQL</span>
+                </div>
+                <h3 class="card-title">Online Library CMS</h3>
+                <p class="card-text">A comprehensive digital book collection management system built with Drupal CMS, structured categories, and member borrowing tracking.</p>
+                <div class="card-footer">
+                  <span>View Case Study</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Project 3: Web Profile Flask -->
+          <a href="detail-guci.html" class="portfolio-card-link" data-category="backend" data-aos="fade-up" data-aos-delay="200">
+            <div class="portfolio-card spotlight-card">
+              <div class="card-image-box">
+                <img src="images/portfolios/project3.png" alt="Web Profile Flask" loading="lazy">
+                <span class="card-overlay-badge">Python Backend</span>
+              </div>
+              <div class="card-body">
+                <div class="card-tags">
+                  <span class="card-tag">Python</span>
+                  <span class="card-tag">Flask</span>
+                  <span class="card-tag">Jinja2</span>
+                </div>
+                <h3 class="card-title">Web Profile Flask</h3>
+                <p class="card-text">Dynamic personal profile and documentation website built on the lightweight Python Flask framework with templated views and clean routing.</p>
+                <div class="card-footer">
+                  <span>View Case Study</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Project 4: Campus Web Profile -->
+          <a href="detail-profile.html" class="portfolio-card-link" data-category="web" data-aos="fade-up">
+            <div class="portfolio-card spotlight-card">
+              <div class="card-image-box">
+                <img src="images/portfolios/project4.png" alt="Campus Web Profile" loading="lazy">
+                <span class="card-overlay-badge">Institutional Web</span>
+              </div>
+              <div class="card-body">
+                <div class="card-tags">
+                  <span class="card-tag">PHP Native</span>
+                  <span class="card-tag">MVC Pattern</span>
+                  <span class="card-tag">Bootstrap 5</span>
+                </div>
+                <h3 class="card-title">Campus Web Profile</h3>
+                <p class="card-text">An institutional campus profile and information portal structured around clean MVC architecture, dynamic course catalog, and faculty staff directories.</p>
+                <div class="card-footer">
+                  <span>View Case Study</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Project 5: Mobile App Traffic Counting -->
+          <a href="detail-traffic-app.html" class="portfolio-card-link" data-category="mobile" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-card spotlight-card">
+              <div class="card-image-box">
+                <img src="images/portfolios/project5.png" alt="Traffic Counting Mobile App" loading="lazy">
+                <span class="card-overlay-badge">AI Mobile</span>
+              </div>
+              <div class="card-body">
+                <div class="card-tags">
+                  <span class="card-tag">Flutter</span>
+                  <span class="card-tag">OpenCV</span>
+                  <span class="card-tag">FastAPI</span>
+                </div>
+                <h3 class="card-title">Mobile Traffic Counting App</h3>
+                <p class="card-text">Cross-platform mobile application providing real-time vehicle traffic statistics, live camera feeds, and automated density analytics via computer vision.</p>
+                <div class="card-footer">
+                  <span>View Case Study</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Project 6: Web Traffic Counting System -->
+          <a href="detail-traffic-web.html" class="portfolio-card-link" data-category="backend" data-aos="fade-up" data-aos-delay="200">
+            <div class="portfolio-card spotlight-card">
+              <div class="card-image-box">
+                <img src="images/portfolios/project6.png" alt="Web Traffic Counting System" loading="lazy">
+                <span class="card-overlay-badge">Computer Vision</span>
+              </div>
+              <div class="card-body">
+                <div class="card-tags">
+                  <span class="card-tag">YOLOv8</span>
+                  <span class="card-tag">Python</span>
+                  <span class="card-tag">WebSocket</span>
+                </div>
+                <h3 class="card-title">Web Traffic Monitoring Hub</h3>
+                <p class="card-text">Centrally hosted intelligent transportation dashboard streaming real-time vehicle classification, historical logs, and high-throughput real-time API endpoints.</p>
+                <div class="card-footer">
+                  <span>View Case Study</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Project 7: Mobile App UMKM -->
+          <a href="detail-umkm-app.html" class="portfolio-card-link" data-category="mobile" data-aos="fade-up">
+            <div class="portfolio-card spotlight-card">
+              <div class="card-image-box">
+                <img src="images/portfolios/project7.png" alt="Mobile App UMKM" loading="lazy">
+                <span class="card-overlay-badge">Flutter & Cloud</span>
+              </div>
+              <div class="card-body">
+                <div class="card-tags">
+                  <span class="card-tag">Flutter</span>
+                  <span class="card-tag">Supabase</span>
+                  <span class="card-tag">Google Auth</span>
+                </div>
+                <h3 class="card-title">Mobile App UMKM E-Commerce</h3>
+                <p class="card-text">Mobile sales application for local small businesses (UMKM) powered by Flutter, cloud-hosted Supabase database, and Google OAuth login.</p>
+                <div class="card-footer">
+                  <span>View Case Study</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Project 8: Mobile App Tegal Culture -->
+          <a href="detail-jwt-app.html" class="portfolio-card-link" data-category="mobile" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-card spotlight-card">
+              <div class="card-image-box">
+                <img src="images/portfolios/project8.png" alt="Tegal Culture App" loading="lazy">
+                <span class="card-overlay-badge">Mobile Security</span>
+              </div>
+              <div class="card-body">
+                <div class="card-tags">
+                  <span class="card-tag">Flutter</span>
+                  <span class="card-tag">JWT Security</span>
+                  <span class="card-tag">Supabase</span>
+                </div>
+                <h3 class="card-title">Tegal Culture Mobile App</h3>
+                <p class="card-text">Cultural heritage discovery mobile app featuring interactive guides, secured with cryptographically signed JSON Web Tokens (JWT) & Supabase.</p>
+                <div class="card-footer">
+                  <span>View Case Study</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Project 9: Web Tegal Culture Backend -->
+          <a href="detail-jwt-web.html" class="portfolio-card-link" data-category="backend" data-aos="fade-up" data-aos-delay="200">
+            <div class="portfolio-card spotlight-card">
+              <div class="card-image-box">
+                <img src="images/portfolios/project9.png" alt="Web Tegal Culture Backend" loading="lazy">
+                <span class="card-overlay-badge">API Backend</span>
+              </div>
+              <div class="card-body">
+                <div class="card-tags">
+                  <span class="card-tag">Python API</span>
+                  <span class="card-tag">JWT Verification</span>
+                  <span class="card-tag">Realtime DB</span>
+                </div>
+                <h3 class="card-title">Tegal Culture Central API</h3>
+                <p class="card-text">Centralized Python backend service and administrative dashboard managing real-time cultural data, synchronized seamlessly with project 8.</p>
+                <div class="card-footer">
+                  <span>View Case Study</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- Dynamic Pagination Controls -->
+        <div class="pagination-wrapper" data-aos="fade-up" style="margin-top: 36px;">
+          <button type="button" class="page-btn" onclick="prevPage()" aria-label="Previous Page">&lt;</button>
+          <div id="page-numbers" style="display: flex; gap: 8px;"></div>
+          <button type="button" class="page-btn" onclick="nextPage()" aria-label="Next Page">&gt;</button>
+        </div>
+
+        <!-- Collaboration CTA -->
+        <div style="margin-top: 50px; text-align: center;" data-aos="fade-up">
+          <p style="color: var(--text-secondary); margin-bottom: 20px;">Tertarik untuk membangun solusi digital serupa untuk bisnis atau instansi Anda?</p>
+          <a href="contact.html" class="btn-primary btn-shimmer">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>Hubungi Saya Sekarang</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- MODERN FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-copy">
+        &copy; 2026 <strong>Muhammad Idris Marzuki</strong>. Crafted with precision & clean code.
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://github.com/marzuki23" target="_blank" rel="noopener noreferrer" class="social-pill"
+          aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/muhammad-idris-marzuki-7276a1291" target="_blank" rel="noopener noreferrer"
+          class="social-pill" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.instagram.com/m.idris_23" target="_blank" rel="noopener noreferrer" class="social-pill"
+          aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/628816532285" target="_blank" rel="noopener noreferrer" class="social-pill"
+          aria-label="WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+
+      <a href="#" class="back-to-top">
+        <span>Back to top</span>
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 60,
+      easing: 'ease-out-cubic'
+    });
+    window.addEventListener('load', function () {
+      setTimeout(AOS.refresh, 100);
+    });
+  </script>
+
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 65, density: { enable: true, value_area: 850 } },
+        color: { value: ["#38bdf8", "#818cf8", "#22d3ee"] },
+        shape: { type: "circle" },
+        opacity: { value: 0.7, random: true },
+        size: { value: 3.2, random: true },
+        line_linked: { enable: true, distance: 150, color: "#38bdf8", opacity: 0.4, width: 1.2 },
+        move: { enable: true, speed: 2, direction: "none", random: true, straight: false, out_mode: "out" }
+      },
+      interactivity: {
+        detect_on: "window",
+        events: { onhover: { enable: true, mode: "grab" }, onclick: { enable: true, mode: "push" }, resize: true },
+        modes: { grab: { distance: 170, line_linked: { opacity: 0.75 } }, push: { particles_nb: 3 } }
+      },
+      retina_detect: true
+    });
+  </script>
+
+  <!-- Core Interactive Script -->
+  <script src="script.js"></script>
+</body>
+
+</html>
