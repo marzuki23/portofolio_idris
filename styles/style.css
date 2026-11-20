@@ -385,64 +385,17 @@ body {
   height: 100%;
 }
 
-/* Brand Monogram & Full Identity Logo (Matching Reference) */
+/* Brand Monogram Logo */
 .brand-logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   text-decoration: none;
   color: var(--text-primary);
-  transition: var(--transition-fast);
-}
-
-.brand-badge-ref {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 42px;
-  height: 42px;
-  min-width: 42px;
-  background: #9f1239;
-  background: linear-gradient(135deg, #be123c 0%, #881337 100%);
-  color: #ffffff;
-  border-radius: 12px;
   font-weight: 800;
-  font-size: 1.15rem;
+  font-size: 1.35rem;
   letter-spacing: -0.02em;
-  box-shadow: 0 4px 14px rgba(190, 18, 60, 0.35);
-  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-.brand-logo:hover .brand-badge-ref {
-  transform: scale(1.06);
-}
-
-.brand-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
-  line-height: 1.25;
-}
-
-.brand-name {
-  font-size: 0.98rem;
-  font-weight: 800;
-  color: var(--text-primary);
-  letter-spacing: -0.015em;
-  transition: color var(--transition-fast);
-}
-
-.brand-logo:hover .brand-name {
-  color: var(--accent-cyan);
-}
-
-.brand-role {
-  font-size: 0.72rem;
-  font-weight: 500;
-  color: var(--text-muted);
-  letter-spacing: -0.005em;
-  margin-top: 2px;
+  transition: var(--transition-fast);
 }
 
 .brand-badge {
