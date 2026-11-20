@@ -801,4 +801,29 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   }
+
+  // ---------------------------------------------------------
+  // 11. CERTIFICATE CATEGORY FILTERING
+  // ---------------------------------------------------------
+  const certFilterBtns = document.querySelectorAll("[data-cert-filter]");
+  const certCards = document.querySelectorAll(".cert-visual-card");
+
+  if (certFilterBtns.length && certCards.length) {
+    certFilterBtns.forEach((btn) => {
+      btn.addEventListener("click", function () {
+        certFilterBtns.forEach((b) => b.classList.remove("active"));
+        this.classList.add("active");
+
+        const targetFilter = this.getAttribute("data-cert-filter");
+        certCards.forEach((card) => {
+          const category = card.getAttribute("data-category");
+          if (targetFilter === "all" || category === targetFilter) {
+            card.classList.remove("hidden");
+          } else {
+            card.classList.add("hidden");
+          }
+        });
+      });
+    });
+  }
 });
